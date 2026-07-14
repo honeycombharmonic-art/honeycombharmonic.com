@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Contact Honeycomb Harmonic for bodywork sessions, balm orders, classes, practitioner training, and collaborations.">
+    <title>Contact | Honeycomb Harmonic</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Honeycomb Harmonic home">
+        <img src="assets/harmonic-touch-mark.svg" alt="">
+        <span><strong>Honeycomb Harmonic</strong><em>bodywork · balm · classes</em></span>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="bodywork.html">Bodywork</a>
+        <a href="balm.html">Balm</a>
+        <a href="classes.html">Classes</a>
+        <a href="philosophy.html">Philosophy</a>
+        <a aria-current="page" href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="contact-page">
+        <div>
+          <p class="kicker">Start here</p>
+          <h1>Book, order, or ask a real question.</h1>
+          <p>Use this form for sessions, class interest, balm orders, practitioner questions, or collaborations.</p>
+        </div>
+        <form name="honeycomb-contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="contact">
+          <input type="hidden" name="form-name" value="honeycomb-contact">
+          <p class="hidden"><label>Do not fill this out: <input name="bot-field"></label></p>
+          <label>Name<input name="name" autocomplete="name" required></label>
+          <label>Email<input type="email" name="email" autocomplete="email" required></label>
+          <label>What are you reaching out about?
+            <select name="topic">
+              <option>Bodywork session</option>
+              <option>Balm order</option>
+              <option>Class or workshop</option>
+              <option>Practitioner training</option>
+              <option>Something else</option>
+            </select>
+          </label>
+          <label>Message<textarea name="message" rows="5" placeholder="Tell me what your body, project, or practice is asking for."></textarea></label>
+          <button class="button primary" type="submit">Send inquiry</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div><strong>Honeycomb Harmonic</strong><p>Bodywork, balm, classes, and practical somatic education.</p></div>
+      <div class="footer-links"><a href="bodywork.html">Bodywork</a><a href="balm.html">Balm</a><a href="classes.html">Classes</a></div>
+    </footer>
+  </body>
+</html>

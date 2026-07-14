@@ -7,12 +7,16 @@ document.querySelectorAll(".shop-item").forEach((button) => {
   button.addEventListener("click", () => {
     const product = button.dataset.product;
     const price = button.dataset.price;
-    cartText.textContent = `${product} staged at $${price}. Send the inquiry form to complete this draft order.`;
+    if (cartText) {
+      cartText.textContent = `${product} staged at $${price}. Use the contact page to complete this draft order.`;
+    }
 
     if (topicSelect) topicSelect.value = "Balm order";
     if (messageBox && !messageBox.value.trim()) {
       messageBox.value = `I would like to order: ${product}.`;
     }
-    contactForm?.scrollIntoView({ behavior: "smooth", block: "start" });
+    if (contactForm) {
+      contactForm.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
   });
 });

@@ -1,14 +1,17 @@
 :root {
-  --ink: #18201c;
-  --muted: #627069;
-  --paper: #f7f1e7;
+  --ink: #141713;
+  --night: #0d1110;
+  --muted: #667069;
+  --paper: #f4efe5;
   --cream: #fffaf0;
-  --honey: #d99a25;
-  --honey-dark: #9f6514;
+  --honey: #d8a24a;
+  --gold: #f0c771;
+  --blue: #2d7894;
   --leaf: #415c46;
-  --clay: #a85f45;
-  --line: rgba(24, 32, 28, 0.16);
-  --shadow: 0 22px 80px rgba(28, 26, 18, 0.16);
+  --clay: #9e5b42;
+  --line: rgba(20, 23, 19, 0.16);
+  --soft-line: rgba(255, 250, 240, 0.22);
+  --shadow: 0 24px 80px rgba(17, 20, 16, 0.2);
 }
 
 * {
@@ -43,32 +46,26 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 24px;
-  padding: 14px clamp(18px, 4vw, 56px);
-  border-bottom: 1px solid rgba(255, 250, 240, 0.42);
-  background: rgba(247, 241, 231, 0.86);
-  backdrop-filter: blur(16px);
+  gap: 22px;
+  padding: 12px clamp(18px, 4vw, 56px);
+  border-bottom: 1px solid rgba(20, 23, 19, 0.1);
+  background: rgba(244, 239, 229, 0.88);
+  backdrop-filter: blur(18px);
 }
 
 .brand {
   display: inline-flex;
   align-items: center;
   gap: 12px;
-  min-width: 220px;
+  min-width: 245px;
   text-decoration: none;
 }
 
-.brand-mark {
-  display: grid;
-  width: 42px;
-  height: 42px;
-  place-items: center;
-  color: #fff8e8;
-  background: var(--ink);
-  clip-path: polygon(25% 4%, 75% 4%, 100% 50%, 75% 96%, 25% 96%, 0 50%);
-  font-size: 13px;
-  font-weight: 800;
-  letter-spacing: 0.04em;
+.brand img {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  box-shadow: 0 12px 28px rgba(17, 20, 16, 0.18);
 }
 
 .brand strong,
@@ -78,6 +75,7 @@ img {
 
 .brand strong {
   font-size: 15px;
+  letter-spacing: 0.01em;
 }
 
 .brand em {
@@ -90,89 +88,105 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  gap: 6px;
+  gap: 4px;
 }
 
 .nav a {
   min-height: 38px;
-  padding: 9px 12px;
+  padding: 9px 11px;
   border-radius: 999px;
-  color: #29352f;
+  color: #27322d;
   font-size: 14px;
+  font-weight: 700;
   text-decoration: none;
 }
 
-.nav a:hover {
-  background: rgba(217, 154, 37, 0.14);
+.nav a:hover,
+.nav a[aria-current="page"] {
+  background: rgba(216, 162, 74, 0.18);
+  color: #18130b;
+}
+
+.hero,
+.page-hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
 }
 
 .hero {
-  position: relative;
-  min-height: min(760px, calc(100vh - 70px));
+  min-height: min(790px, calc(100vh - 72px));
   display: grid;
   align-items: end;
-  isolation: isolate;
-  overflow: hidden;
-  padding: clamp(54px, 8vw, 96px) clamp(20px, 5vw, 72px);
+  padding: clamp(56px, 8vw, 100px) clamp(20px, 5vw, 72px);
 }
 
 .hero-media {
   position: absolute;
   inset: 0;
   z-index: -2;
-  background: linear-gradient(90deg, rgba(16, 22, 18, 0.78), rgba(16, 22, 18, 0.34) 48%, rgba(16, 22, 18, 0.1)),
-    url("assets/bodywork-hands.jpg") center / cover no-repeat;
 }
 
-.hero::after {
+.product-hero {
+  background:
+    linear-gradient(90deg, rgba(13, 17, 16, 0.86), rgba(13, 17, 16, 0.46) 48%, rgba(13, 17, 16, 0.1)),
+    url("assets/harmonic-touch-product.png") center / cover no-repeat;
+}
+
+.hero::after,
+.page-hero::after {
   position: absolute;
-  right: -16vw;
-  bottom: -20vh;
+  right: -13vw;
+  bottom: -18vh;
   z-index: -1;
-  width: 54vw;
-  height: 54vw;
-  min-width: 420px;
-  min-height: 420px;
+  width: 50vw;
+  height: 50vw;
+  min-width: 390px;
+  min-height: 390px;
   content: "";
-  border: 1px solid rgba(255, 250, 240, 0.22);
-  transform: rotate(8deg);
+  border: 1px solid rgba(240, 199, 113, 0.28);
+  transform: rotate(9deg);
   clip-path: polygon(25% 4%, 75% 4%, 100% 50%, 75% 96%, 25% 96%, 0 50%);
 }
 
 .hero-copy {
-  width: min(760px, 100%);
-  color: #fffaf0;
+  width: min(780px, 100%);
+  color: var(--cream);
 }
 
 .kicker {
   margin: 0 0 12px;
   color: var(--honey);
   font-size: 13px;
-  font-weight: 800;
+  font-weight: 850;
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
 
-.hero h1,
-.section h2,
-.product-copy h2,
-.booking h2 {
-  margin: 0;
-  letter-spacing: 0;
-  line-height: 0.96;
-}
-
-.hero h1 {
-  max-width: 820px;
+h1,
+h2,
+h3,
+.belief-strip p {
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(44px, 8vw, 92px);
   font-weight: 500;
+  letter-spacing: 0;
 }
 
-.lede {
+.hero h1,
+.page-hero h1,
+.product-copy h1,
+.contact-page h1 {
+  margin: 0;
+  line-height: 0.96;
+  font-size: clamp(46px, 8vw, 96px);
+}
+
+.lede,
+.page-hero p,
+.contact-page p {
   max-width: 650px;
   margin: 24px 0 0;
-  color: rgba(255, 250, 240, 0.88);
+  color: rgba(255, 250, 240, 0.86);
   font-size: clamp(18px, 2vw, 22px);
 }
 
@@ -191,7 +205,7 @@ img {
   padding: 13px 20px;
   border: 1px solid var(--ink);
   border-radius: 999px;
-  font-weight: 800;
+  font-weight: 850;
   text-decoration: none;
   cursor: pointer;
 }
@@ -204,26 +218,34 @@ img {
 
 .button.ghost {
   border-color: rgba(255, 250, 240, 0.72);
-  color: #fffaf0;
+  color: var(--cream);
   background: rgba(255, 250, 240, 0.08);
+}
+
+.text-link {
+  display: inline-flex;
+  margin-top: 18px;
+  color: #7d4d13;
+  font-weight: 850;
+  text-decoration-color: rgba(125, 77, 19, 0.35);
+  text-underline-offset: 5px;
 }
 
 .belief-strip {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   border-block: 1px solid var(--line);
-  background: var(--ink);
+  background: var(--night);
   color: #f9efd9;
 }
 
 .belief-strip p {
-  min-height: 82px;
+  min-height: 86px;
   margin: 0;
   display: grid;
   place-items: center;
   padding: 18px;
-  border-right: 1px solid rgba(255, 250, 240, 0.18);
-  font-family: Georgia, "Times New Roman", serif;
+  border-right: 1px solid var(--soft-line);
   font-size: clamp(18px, 2vw, 24px);
   text-align: center;
 }
@@ -232,67 +254,165 @@ img {
   padding: clamp(58px, 8vw, 112px) clamp(20px, 5vw, 72px);
 }
 
-.intro,
-.notes,
-.booking {
+.split,
+.contact-page {
   display: grid;
   grid-template-columns: minmax(260px, 0.85fr) minmax(0, 1.15fr);
   gap: clamp(28px, 6vw, 78px);
 }
 
-.section h2,
-.product-copy h2,
-.booking h2 {
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(34px, 5vw, 64px);
-  font-weight: 500;
+.split h2,
+.maker-band h2,
+.product-copy h1,
+.contact-page h1 {
+  margin: 0;
+  font-size: clamp(34px, 5vw, 66px);
+  line-height: 0.98;
 }
 
-.intro-copy,
-.note-list {
+.rich-copy {
   color: #2b362f;
   font-size: clamp(18px, 2vw, 21px);
 }
 
-.section-head {
-  max-width: 820px;
-  margin-bottom: 30px;
+.rich-copy p:first-child {
+  margin-top: 0;
+}
+
+.warm {
+  background: #fff7e7;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.feature-card {
+  min-height: 430px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: clamp(24px, 4vw, 42px);
+  border-top: 1px solid var(--line);
+  border-right: 1px solid var(--line);
+  background: #fffaf0;
+  text-decoration: none;
+}
+
+.feature-card.dark {
+  color: var(--cream);
+  background:
+    linear-gradient(rgba(13, 17, 16, 0.55), rgba(13, 17, 16, 0.86)),
+    url("assets/bodywork-hands.jpg") center / cover no-repeat;
+}
+
+.feature-card.balm-card {
+  color: var(--cream);
+  background:
+    linear-gradient(rgba(13, 17, 16, 0.25), rgba(13, 17, 16, 0.74)),
+    url("assets/harmonic-touch-label-concept.png") center / cover no-repeat;
+}
+
+.feature-card span,
+.principles span {
+  color: var(--honey);
+  font-weight: 900;
+}
+
+.feature-card h2 {
+  margin: 18px 0 8px;
+  font-size: clamp(32px, 4vw, 54px);
+  line-height: 0.98;
+}
+
+.feature-card p {
+  max-width: 380px;
+  margin: 0;
+  color: currentColor;
+  opacity: 0.78;
+}
+
+.maker-band {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.78fr) minmax(0, 1.22fr);
+  gap: clamp(26px, 5vw, 70px);
+  align-items: center;
+  background: #e9eee7;
+}
+
+.maker-band img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.maker-band p {
+  max-width: 720px;
+  color: #3a453e;
+  font-size: clamp(18px, 2vw, 21px);
+}
+
+.page-hero {
+  min-height: 560px;
+  display: grid;
+  align-content: end;
+  padding: clamp(62px, 9vw, 118px) clamp(20px, 5vw, 72px);
+  color: var(--cream);
+  background: var(--night);
+}
+
+.bodywork-hero {
+  background:
+    linear-gradient(90deg, rgba(13, 17, 16, 0.86), rgba(13, 17, 16, 0.34)),
+    url("assets/bodywork-hands.jpg") center / cover no-repeat;
+}
+
+.classes-hero,
+.philosophy-hero {
+  background:
+    linear-gradient(90deg, rgba(13, 17, 16, 0.82), rgba(13, 17, 16, 0.45)),
+    url("assets/harmonic-touch-logo-reference.png") center / cover no-repeat;
 }
 
 .offer-grid,
-.class-grid {
+.class-grid,
+.principles {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 16px;
 }
 
 .offer-card,
-.class-grid article {
-  min-height: 290px;
-  padding: 24px;
+.class-grid article,
+.principles article {
+  min-height: 300px;
+  padding: 25px;
   border: 1px solid var(--line);
   border-radius: 8px;
-  background: rgba(255, 250, 240, 0.58);
+  background: rgba(255, 250, 240, 0.62);
 }
 
 .offer-card.featured {
-  color: #fffaf0;
+  color: var(--cream);
   background: var(--leaf);
   box-shadow: var(--shadow);
 }
 
-.offer-card h3,
-.class-grid h3 {
+.offer-card h2,
+.class-grid h2,
+.principles h2 {
   margin: 18px 0 12px;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 28px;
-  line-height: 1.05;
+  font-size: 30px;
+  line-height: 1.04;
 }
 
 .offer-card p,
 .class-grid p,
+.principles p,
 .product-copy p,
-.booking p,
 .footer p {
   color: var(--muted);
 }
@@ -313,29 +433,43 @@ img {
   border: 1px solid currentColor;
   border-radius: 999px;
   font-size: 12px;
-  font-weight: 800;
+  font-weight: 850;
   text-transform: uppercase;
 }
 
-.product-band {
+.product-page {
   display: grid;
-  grid-template-columns: minmax(280px, 0.92fr) minmax(0, 1.08fr);
-  background: #fff8e7;
+  grid-template-columns: minmax(320px, 1.06fr) minmax(0, 0.94fr);
+  min-height: calc(100vh - 73px);
+  background: #fff7e7;
 }
 
-.product-image {
-  min-height: 680px;
+.product-showcase {
+  position: relative;
+  min-height: 720px;
+  overflow: hidden;
+  background: var(--night);
 }
 
-.product-image img {
+.product-photo {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
+.label-photo {
+  position: absolute;
+  right: clamp(18px, 4vw, 48px);
+  bottom: clamp(18px, 4vw, 48px);
+  width: min(240px, 34vw);
+  border: 1px solid rgba(255, 250, 240, 0.32);
+  border-radius: 999px;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.45);
+}
+
 .product-copy {
   align-self: center;
-  padding: clamp(44px, 7vw, 92px);
+  padding: clamp(42px, 7vw, 92px);
 }
 
 .formula-list {
@@ -347,12 +481,12 @@ img {
 
 .formula-list span {
   padding: 9px 11px;
-  border: 1px solid rgba(159, 101, 20, 0.26);
+  border: 1px solid rgba(158, 110, 39, 0.26);
   border-radius: 999px;
-  background: rgba(217, 154, 37, 0.12);
-  color: var(--honey-dark);
+  background: rgba(216, 162, 74, 0.12);
+  color: #7b4f17;
   font-size: 13px;
-  font-weight: 800;
+  font-weight: 850;
 }
 
 .shop-list {
@@ -380,7 +514,8 @@ img {
 }
 
 .shop-item strong,
-.shop-item em {
+.shop-item em,
+.shop-item small {
   display: block;
 }
 
@@ -390,12 +525,11 @@ img {
 }
 
 .shop-item small {
-  display: block;
   max-width: 520px;
   margin-top: 7px;
   color: #536159;
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 650;
   line-height: 1.35;
 }
 
@@ -404,34 +538,29 @@ img {
   font-size: 13px;
 }
 
-.classes {
-  background: #eef1ea;
-}
-
 .class-grid article {
-  background: rgba(255, 255, 255, 0.48);
+  background: rgba(255, 255, 255, 0.5);
 }
 
 .class-grid span {
   display: inline-flex;
   margin-top: 14px;
   color: var(--clay);
-  font-weight: 800;
+  font-weight: 850;
 }
 
-.notes {
-  border-top: 1px solid var(--line);
+.principles {
+  padding-top: 0;
 }
 
-.booking {
-  padding: clamp(54px, 8vw, 100px) clamp(20px, 5vw, 72px);
-  color: #fffaf0;
-  background: var(--ink);
-}
-
-.booking .kicker,
-.booking p {
-  color: #e4b860;
+.contact-page {
+  min-height: calc(100vh - 73px);
+  align-items: center;
+  padding: clamp(58px, 8vw, 112px) clamp(20px, 5vw, 72px);
+  color: var(--cream);
+  background:
+    linear-gradient(90deg, rgba(13, 17, 16, 0.9), rgba(13, 17, 16, 0.7)),
+    url("assets/harmonic-touch-product.png") center / cover no-repeat;
 }
 
 form {
@@ -442,9 +571,9 @@ form {
 label {
   display: grid;
   gap: 7px;
-  color: rgba(255, 250, 240, 0.78);
+  color: rgba(255, 250, 240, 0.82);
   font-size: 14px;
-  font-weight: 800;
+  font-weight: 850;
 }
 
 input,
@@ -453,10 +582,10 @@ textarea {
   width: 100%;
   min-height: 48px;
   padding: 12px 13px;
-  border: 1px solid rgba(255, 250, 240, 0.24);
+  border: 1px solid rgba(255, 250, 240, 0.28);
   border-radius: 8px;
-  color: #fffaf0;
-  background: rgba(255, 250, 240, 0.08);
+  color: var(--cream);
+  background: rgba(255, 250, 240, 0.1);
   font: inherit;
 }
 
@@ -479,7 +608,7 @@ textarea {
   padding: 14px 16px;
   border: 1px solid var(--line);
   border-radius: 8px;
-  background: rgba(255, 250, 240, 0.94);
+  background: rgba(255, 250, 240, 0.95);
   box-shadow: var(--shadow);
   font-size: 14px;
 }
@@ -494,7 +623,7 @@ textarea {
   gap: 24px;
   padding: 34px clamp(20px, 5vw, 72px);
   border-top: 1px solid var(--line);
-  background: #fffaf0;
+  background: var(--cream);
 }
 
 .footer-links {
@@ -503,7 +632,7 @@ textarea {
   gap: 14px;
 }
 
-@media (max-width: 860px) {
+@media (max-width: 960px) {
   .site-header,
   .footer {
     align-items: flex-start;
@@ -515,26 +644,37 @@ textarea {
   }
 
   .belief-strip,
-  .intro,
-  .notes,
-  .booking,
+  .split,
+  .contact-page,
+  .feature-grid,
+  .maker-band,
   .offer-grid,
   .class-grid,
-  .product-band {
+  .principles,
+  .product-page {
     grid-template-columns: 1fr;
   }
 
   .belief-strip p {
     border-right: 0;
-    border-bottom: 1px solid rgba(255, 250, 240, 0.18);
+    border-bottom: 1px solid var(--soft-line);
   }
 
-  .product-image {
-    min-height: 390px;
+  .product-showcase {
+    min-height: 500px;
   }
 }
 
 @media (max-width: 560px) {
+  .brand {
+    min-width: 0;
+  }
+
+  .brand img {
+    width: 42px;
+    height: 42px;
+  }
+
   .hero {
     min-height: 720px;
     padding-top: 44px;
@@ -546,9 +686,23 @@ textarea {
     width: 100%;
   }
 
+  .feature-card,
   .offer-card,
-  .class-grid article {
+  .class-grid article,
+  .principles article {
     min-height: auto;
+  }
+
+  .page-hero {
+    min-height: 500px;
+  }
+
+  .product-showcase {
+    min-height: 420px;
+  }
+
+  .label-photo {
+    width: 148px;
   }
 
   .cart-panel {

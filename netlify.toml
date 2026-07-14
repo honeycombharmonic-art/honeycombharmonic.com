@@ -9,6 +9,31 @@
     Referrer-Policy = "strict-origin-when-cross-origin"
 
 [[redirects]]
+  from = "/bodywork"
+  to = "/bodywork.html"
+  status = 200
+
+[[redirects]]
+  from = "/balm"
+  to = "/balm.html"
+  status = 200
+
+[[redirects]]
+  from = "/classes"
+  to = "/classes.html"
+  status = 200
+
+[[redirects]]
+  from = "/philosophy"
+  to = "/philosophy.html"
+  status = 200
+
+[[redirects]]
+  from = "/contact"
+  to = "/contact.html"
+  status = 200
+
+[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
