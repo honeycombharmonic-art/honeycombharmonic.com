@@ -389,6 +389,16 @@ img {
   font-style: normal;
 }
 
+.shop-item small {
+  display: block;
+  max-width: 520px;
+  margin-top: 7px;
+  color: #536159;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
 .fine-print {
   margin-top: 18px;
   font-size: 13px;
