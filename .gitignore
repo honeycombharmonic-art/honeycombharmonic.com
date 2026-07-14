@@ -1,0 +1,4 @@
+preview-*.png
+.netlify/
+.DS_Store
+Thumbs.db
