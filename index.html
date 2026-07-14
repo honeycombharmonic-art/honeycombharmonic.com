@@ -1,103 +1,62 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Honeycomb Harmonic offers transformational bodywork, Harmonic Touch Balm, and practical classes in touch, felt sense, and bodywork craft.">
-    <title>Honeycomb Harmonic | Bodywork, Balm, Classes</title>
-    <link rel="preload" href="assets/harmonic-touch-product.png" as="image">
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <header class="site-header">
-      <a class="brand" href="index.html" aria-label="Honeycomb Harmonic home">
-        <img src="assets/harmonic-touch-mark.svg" alt="">
-        <span>
-          <strong>Honeycomb Harmonic</strong>
-          <em>bodywork · balm · classes</em>
-        </span>
-      </a>
-      <nav class="nav" aria-label="Primary navigation">
-        <a aria-current="page" href="index.html">Home</a>
-        <a href="bodywork.html">Bodywork</a>
-        <a href="balm.html">Balm</a>
-        <a href="classes.html">Classes</a>
-        <a href="philosophy.html">Philosophy</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </header>
-
-    <main>
-      <section class="hero home-hero" aria-labelledby="hero-title">
-        <div class="hero-media product-hero" role="img" aria-label="Harmonic Touch Balm tin on a warm bodywork table"></div>
-        <div class="hero-copy">
-          <p class="kicker">Transformational touch for real bodies</p>
-          <h1 id="hero-title">Bodywork, balm, and classes for people who listen with their hands.</h1>
-          <p class="lede">Honeycomb Harmonic is a public studio for skilled contact: therapeutic bodywork, practitioner-grade Harmonic Touch Balm, and education that turns felt sense into usable craft.</p>
-          <div class="hero-actions">
-            <a class="button primary" href="contact.html">Book or inquire</a>
-            <a class="button ghost" href="balm.html">Shop the balm</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="belief-strip" aria-label="Core philosophy">
-        <p>Less noise. More contact.</p>
-        <p>Less fixing. More intelligent pressure.</p>
-        <p>Less performance. More practitioner-grade craft.</p>
-      </section>
-
-      <section class="section split" aria-labelledby="home-intro-title">
-        <div>
-          <p class="kicker">The centerline</p>
-          <h2 id="home-intro-title">A body is not a machine. It is a living system that responds to better evidence.</h2>
-        </div>
-        <div class="rich-copy">
-          <p>The work here is built around steady attention, clear pressure, honest pacing, and products that feel good under real hands. No mystic fog. No sterile clinic costume. Just depth, beauty, and useful contact.</p>
-          <p>Sessions, balms, and classes share one aim: help the body find options other than bracing, collapse, or pushing through.</p>
-        </div>
-      </section>
-
-      <section class="feature-grid" aria-label="Honeycomb Harmonic sections">
-        <a class="feature-card dark" href="bodywork.html">
-          <span>01</span>
-          <h2>Bodywork</h2>
-          <p>Focused sessions for tension, transition, structural patterning, and nervous-system settling.</p>
-        </a>
-        <a class="feature-card balm-card" href="balm.html">
-          <span>02</span>
-          <h2>Harmonic Touch Balm</h2>
-          <p>Two small-batch balms: the regular working formula and the richer targeted comfort balm.</p>
-        </a>
-        <a class="feature-card" href="classes.html">
-          <span>03</span>
-          <h2>Classes</h2>
-          <p>Felt sense, touch skills, practitioner refinement, and practical formulation labs.</p>
-        </a>
-      </section>
-
-      <section class="section maker-band" aria-labelledby="maker-title">
-        <img src="assets/practitioner-portrait.png" alt="Practitioner portrait in the mountains">
-        <div>
-          <p class="kicker">High-country craft</p>
-          <h2 id="maker-title">Built for people who want beauty to hold up under use.</h2>
-          <p>Honeycomb Harmonic sits at the meeting point of apothecary, bodywork room, and classroom. The tone is refined, but the test is simple: does it help a real person feel, work, rest, or practice more honestly?</p>
-          <a class="text-link" href="philosophy.html">Read the philosophy</a>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div>
-        <strong>Honeycomb Harmonic</strong>
-        <p>Bodywork, balm, classes, and practical somatic education.</p>
-      </div>
-      <div class="footer-links">
-        <a href="bodywork.html">Bodywork</a>
-        <a href="balm.html">Balm</a>
-        <a href="classes.html">Classes</a>
-        <a href="contact.html">Contact</a>
-      </div>
-    </footer>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Honeycomb Harmonic â€” Somatic Reeducation for patterns that keep coming back.">
+  <title>Honeycomb Harmonic â€” Somatic Reeducation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <style>
+    :root{--ink:#191815;--paper:#eee7da;--chalk:#f8f4ec;--acid:#c2a36f;--wine:#682f3d;--blue:#365866;--muted:#625f57;--line:rgba(25,24,21,.19);--sans:"DM Sans",Arial,sans-serif;--serif:"Instrument Serif",Georgia,serif;--pad:clamp(20px,4.4vw,76px)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;overflow-x:hidden}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.55;overflow-x:hidden}a{color:inherit}img{display:block;width:100%;height:100%;object-fit:cover}.skip{position:absolute;left:-9999px}.skip:focus{left:12px;top:12px;background:var(--acid);padding:10px;z-index:20}
+    header{height:76px;padding:0 var(--pad);display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(238,231,218,.94);backdrop-filter:blur(14px);z-index:10}.brand{font-weight:600;letter-spacing:-.04em;text-decoration:none;font-size:19px}.brand i{font-family:var(--serif);font-weight:400}.nav{display:flex;align-items:center;gap:28px}.nav a{text-decoration:none;font-size:13px}.button{display:inline-flex;justify-content:center;align-items:center;min-height:46px;padding:0 18px;border:1px solid var(--ink);text-decoration:none;font-size:13px;font-weight:600}.button.dark{background:var(--ink);color:var(--chalk)}.button.acid{background:var(--acid);color:var(--ink);border-color:var(--acid)}
+    .hero{min-height:calc(100vh - 76px);display:grid;grid-template-columns:1.12fr .88fr;border-bottom:1px solid var(--line)}.hero>*{min-width:0}.hero-copy{padding:clamp(55px,8vw,128px) var(--pad);display:flex;flex-direction:column;justify-content:space-between}.eyebrow{text-transform:uppercase;letter-spacing:.13em;font-size:11px;font-weight:600}.hero h1,.display{font-family:var(--serif);font-weight:400;letter-spacing:-.045em;line-height:.91;margin:30px 0;font-size:clamp(65px,9.2vw,154px);max-width:1050px}.hero h1 span,.hero h1 em{display:block}.hero h1 em{color:var(--wine);font-weight:400}.lede{font-size:clamp(18px,1.65vw,25px);max-width:660px;letter-spacing:-.02em}.hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:34px}.hero-visual{min-height:600px;background:#201e1a;display:grid;grid-template-rows:1fr auto}.hero-visual img{filter:saturate(.65) contrast(1.06);min-height:0}.image-note{background:var(--acid);padding:20px 24px;font-size:13px}.image-note strong{display:block;font-family:var(--serif);font-size:27px;font-weight:400;line-height:1}
+    .doors{display:grid;grid-template-columns:repeat(3,1fr);background:var(--ink);color:var(--chalk)}.door{min-height:330px;padding:42px var(--pad);border-right:1px solid rgba(255,255,255,.18);display:flex;flex-direction:column;justify-content:space-between;text-decoration:none;transition:background .25s,color .25s}.door:hover{background:var(--acid);color:var(--ink)}.door span{font-size:12px}.door h2{font-family:var(--serif);font-weight:400;font-size:clamp(36px,4vw,64px);line-height:.95;margin:20px 0}.door p{max-width:340px}.arrow{font-size:30px}
+    section{padding:clamp(75px,10vw,155px) var(--pad);border-bottom:1px solid var(--line)}.section-head{display:grid;grid-template-columns:.35fr 1.65fr;gap:30px;margin-bottom:70px}.section-head h2{font-family:var(--serif);font-weight:400;font-size:clamp(54px,7vw,110px);letter-spacing:-.045em;line-height:.91;margin:0;max-width:1000px}.section-head p{max-width:600px;font-size:19px}
+    .method-grid{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}.method{min-height:250px;padding:25px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}.method b{font-family:var(--serif);font-size:34px;font-weight:400}.method span{display:block;margin-top:70px;color:var(--muted)}
+    .quote{background:var(--wine);color:var(--chalk);display:grid;grid-template-columns:1.25fr .75fr;gap:60px}.quote blockquote{font-family:var(--serif);font-size:clamp(50px,7vw,104px);line-height:.94;letter-spacing:-.04em;margin:0}.quote aside{align-self:end;font-size:15px;max-width:410px}.quote mark{background:var(--acid);color:var(--ink);padding:0 .08em}
+    .pain-model{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.pain{padding:26px;min-height:340px;background:var(--chalk);display:flex;flex-direction:column;justify-content:space-between}.pain:nth-child(2){background:#d9d1c2}.pain:nth-child(3){background:var(--blue);color:white}.pain:nth-child(4){background:var(--ink);color:white}.pain .num{font-size:12px}.pain h3{font-family:var(--serif);font-size:42px;font-weight:400;margin:0}.pain p{font-size:14px}
+    .profile{display:grid;grid-template-columns:.8fr 1.2fr;padding:0}.profile-image{min-height:760px}.profile-copy{padding:clamp(60px,9vw,140px) var(--pad);background:var(--chalk)}.profile-copy h2{font-family:var(--serif);font-size:clamp(55px,7vw,106px);line-height:.9;letter-spacing:-.04em;font-weight:400;margin:20px 0 40px}.profile-copy p{max-width:680px;font-size:18px}.proof{margin-top:60px;border-top:1px solid var(--line)}.proof div{display:grid;grid-template-columns:125px 1fr;padding:15px 0;border-bottom:1px solid var(--line);font-size:14px}.proof b{font-family:var(--serif);font-size:24px;font-weight:400}
+    .classes{background:var(--ink);color:var(--chalk)}.class-list{border-top:1px solid rgba(255,255,255,.24)}.class-row{display:grid;grid-template-columns:110px 1fr .55fr 120px;gap:25px;align-items:center;padding:27px 0;border-bottom:1px solid rgba(255,255,255,.24);text-decoration:none}.class-row h3{font-family:var(--serif);font-size:clamp(29px,3vw,47px);font-weight:400;margin:0}.class-row small{color:#c6c2b9}.class-row .status{color:var(--acid)}
+    .filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:36px}.filter{border:1px solid var(--ink);background:transparent;padding:10px 16px;font:600 12px var(--sans);cursor:pointer}.filter.active{background:var(--ink);color:var(--chalk)}.journal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.story{background:var(--chalk);text-decoration:none}.story-media{aspect-ratio:4/3;overflow:hidden;background:#ccc}.story-media img{transition:transform .5s}.story:hover img{transform:scale(1.025)}.format{display:inline-block;background:var(--acid);padding:6px 9px;font-size:10px;text-transform:uppercase;letter-spacing:.1em;margin-bottom:14px}.story-body{padding:22px}.story-meta{font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}.story h3{font-family:var(--serif);font-weight:400;font-size:34px;line-height:1;margin:18px 0 28px}
+    .start{display:grid;grid-template-columns:1fr 1fr;gap:70px;background:var(--acid)}.start h2{font-family:var(--serif);font-size:clamp(64px,9vw,145px);font-weight:400;line-height:.83;letter-spacing:-.05em;margin:0}.steps{counter-reset:item}.step{counter-increment:item;display:grid;grid-template-columns:50px 1fr;padding:20px 0;border-top:1px solid rgba(23,23,20,.35)}.step:before{content:"0" counter(item);font-size:12px}.step b{display:block;font-family:var(--serif);font-size:28px;font-weight:400}.step p{margin:5px 0;font-size:14px}
+    footer{background:var(--ink);color:var(--chalk);padding:70px var(--pad) 30px}.footer-main{display:grid;grid-template-columns:1.3fr repeat(3,.5fr);gap:40px}.footer-main h2{font-family:var(--serif);font-size:52px;font-weight:400;line-height:.9;margin:0}.footer-main a{display:block;text-decoration:none;margin:7px 0;font-size:13px}.fine{margin-top:80px;padding-top:20px;border-top:1px solid rgba(255,255,255,.2);display:flex;justify-content:space-between;font-size:11px;color:#aaa}
+    @media(max-width:900px){.nav a:not(.button){display:none}.hero,.profile,.quote,.start{grid-template-columns:1fr}.hero-visual{min-height:520px}.doors{grid-template-columns:1fr}.door{min-height:240px;border-bottom:1px solid rgba(255,255,255,.18)}.section-head{grid-template-columns:1fr}.method-grid,.pain-model{grid-template-columns:1fr 1fr}.class-row{grid-template-columns:75px 1fr}.class-row>*:nth-child(n+3){display:none}.journal-grid{grid-template-columns:1fr 1fr}.profile-image{min-height:550px}.footer-main{grid-template-columns:1fr 1fr}}
+    @media(max-width:600px){header{height:66px}.nav .button{display:none}.brand{font-size:18px}.hero{min-height:auto;width:100vw}.hero-copy{padding-top:70px;width:100vw}.hero h1{font-size:clamp(43px,11vw,50px);width:calc(100vw - (2 * var(--pad)));max-width:360px;letter-spacing:-.035em}.lede{font-size:17px;width:calc(100vw - (2 * var(--pad)));max-width:360px}.hero-visual{min-height:430px;width:100vw}.method-grid,.pain-model,.journal-grid{grid-template-columns:1fr}.quote{gap:35px}.class-row{grid-template-columns:50px 1fr}.footer-main{grid-template-columns:1fr}.fine{display:block}.fine span{display:block;margin-top:8px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header><a class="brand" href="#">HONEYCOMB <i>Harmonic</i></a><nav class="nav" aria-label="Primary"><a href="#bodywork">Bodywork</a><a href="#philosophy">Philosophy</a><a href="#classes">Classes</a><a href="#journal">Journal</a><a class="button dark" href="#start">Start here</a></nav></header>
+  <main id="main">
+    <div class="hero">
+      <div class="hero-copy"><div><div class="eyebrow">Somatic Reeducation Â· Anson Kemper</div><h1><span>For patterns</span><span>that keep</span><em>coming back.</em></h1><p class="lede">Precise bodywork and somatic education for breath, posture, guarded movement, and the ways a body learns to protect.</p><div class="hero-actions"><a class="button acid" href="#start">Find your starting point</a><a class="button" href="#bodywork">See how it works</a></div></div><p class="eyebrow">Touch Â· Position Â· Breath Â· New options</p></div>
+      <div class="hero-visual"><img src="assets/hero.jpg" alt="Practitioners using supported positioning during a multidimensional bodywork session"><div class="image-note"><strong>Not a massage script.</strong> The session responds to the body in front of us.</div></div>
+    </div>
+    <div class="doors" aria-label="Choose a path">
+      <a class="door" href="#bodywork"><span>01 / Receive</span><div><h2>Bodywork</h2><p>Private sessions for recurring tension, guarded movement, and bodies that want more than temporary relief.</p></div><span class="arrow">â†˜</span></a>
+      <a class="door" href="#classes"><span>02 / Learn</span><div><h2>Classes</h2><p>Experiential workshops and practitioner study in touch, position, perception, and embodied change.</p></div><span class="arrow">â†˜</span></a>
+      <a class="door" href="#journal"><span>03 / Study</span><div><h2>Journal</h2><p>Videos and field notes on breath, posture, pain, contact, and the philosophy beneath the work.</p></div><span class="arrow">â†˜</span></a>
+    </div>
+    <section id="bodywork"><div class="section-head"><div class="eyebrow">The work</div><div><h2>The body learns through experience.</h2><p>Somatic Reeducation introduces precise sensory information without forcing an outcome. The work can look unusual because it follows function, not convention.</p></div></div><div class="method-grid"><div class="method"><b>Touch</b><span>Contact becomes clear sensory information: support, direction, pressure, boundary, rhythm.</span></div><div class="method"><b>Position</b><span>Supported shapes let the body encounter weight and movement without its usual strategy.</span></div><div class="method"><b>Breath</b><span>Breathing reveals how feeling, protection, tone, and posture move together.</span></div><div class="method"><b>Options</b><span>The aim is not perfect alignment. It is a system with more available responses.</span></div></div></section>
+    <section class="quote" id="philosophy"><blockquote>â€œBreathing is the shape of feeling, producing postureâ€”the shape of beingâ€”<mark>saved to memory.</mark>â€</blockquote><aside><div class="eyebrow">Working principle</div><p>Posture is not only mechanical. It is lived history in motion. We work with the present body carefully enough that it can discover something new.</p></aside></section>
+    <section><div class="section-head"><div class="eyebrow">The nested pain model</div><div><h2>Pain is never only physical.</h2><p>We do not treat these as isolated buckets. Embodiment is the ongoing organization of body, feeling, relationship, and meaning.</p></div></div><div class="pain-model"><article class="pain"><span class="num">01</span><div><h3>Physical</h3><p>What is the body doing? Movement, breath, sleep, injury, conditioning, inflammation.</p></div></article><article class="pain"><span class="num">02</span><div><h3>Emotional</h3><p>How is the experience felt? Fear, grief, anger, protection, learned response, self-image.</p></div></article><article class="pain"><span class="num">03</span><div><h3>Social</h3><p>What relationships shape it? Work, family, isolation, caregiving, culture, belonging.</p></div></article><article class="pain"><span class="num">04</span><div><h3>Spiritual</h3><p>What gives life direction? Meaning, identity, values, hope, connection, purpose.</p></div></article></div></section>
+    <section class="profile"><div class="profile-image"><img src="assets/profile.jpg" alt="Close detail of skilled contact during a table-based bodywork session"></div><div class="profile-copy"><div class="eyebrow">The practitioner</div><h2>Precision with a human nervous system.</h2><p>Anson Kemper has practiced bodywork since 2008. His approach is calm, direct, and responsive: create enough safety for the system to listen, then introduce information the body can actually use.</p><p>This work is for people curious about why the same pattern keeps returningâ€”and for practitioners who want to perceive and respond beyond a standard sequence.</p><div class="proof"><div><b>Since 2008</b><span>Bodywork practice</span></div><div><b>Certified</b><span>Multidimensional Bodywork Â· Sarga Silks instruction</span></div><div><b>2024</b><span>American Massage Championships recognition*</span></div></div><small>*Credential language to be verified against source documentation before publishing.</small></div></section>
+    <section class="classes" id="classes"><div class="section-head"><div class="eyebrow">Learn the method</div><div><h2>Classes with a clear point of entry.</h2><p>Choose by who you are and what you want to become able to notice, feel, or do.</p></div></div><div class="class-list"><a class="class-row" href="#start"><span class="eyebrow">Everyone</span><h3>One New Option: an introduction</h3><small>Experiential Â· 90 minutes Â· No prerequisite</small><span class="status">Join interest list â†—</span></a><a class="class-row" href="#start"><span class="eyebrow">Practitioner</span><h3>Contact as Information</h3><small>Hands-on lab Â· One day Â· Licensed/working practitioners</small><span class="status">Join interest list â†—</span></a><a class="class-row" href="#start"><span class="eyebrow">Immersion</span><h3>Multidimensional Pattern Lab</h3><small>Small cohort Â· Multi-day Â· Application</small><span class="status">Coming next â†—</span></a></div></section>
+    <section id="journal"><div class="section-head"><div class="eyebrow">Watch + Read</div><div><h2>A field journal for embodied change.</h2><p>Not a content treadmill. A useful, searchable body of demonstrations, essays, and observations.</p></div></div><div class="filters" role="group" aria-label="Filter journal"><button class="filter active" data-filter="all">All</button><button class="filter" data-filter="watch">Watch</button><button class="filter" data-filter="read">Read</button><button class="filter" data-filter="practice">Practice</button></div><div class="journal-grid">
+      <a class="story" data-type="watch practice" href="#"><div class="story-media"><img src="assets/journal-position.jpg" alt="Supported bodywork position"></div><div class="story-body"><span class="format">Watch Â· 06:12</span><div class="story-meta">Position Â· Practice</div><h3>What makes a position feel possible?</h3><span>View field note â†—</span></div></a>
+      <a class="story" data-type="read" href="#"><div class="story-media"><img src="assets/journal-contact.jpg" alt="Detailed bodywork contact"></div><div class="story-body"><span class="format">Read Â· 7 min</span><div class="story-meta">Contact Â· Philosophy</div><h3>Touch carries more than pressure.</h3><span>Read essay â†—</span></div></a>
+      <a class="story" data-type="watch" href="#"><div class="story-media"><img src="assets/journal-breath.jpg" alt="Bodywork session in a bright studio"></div><div class="story-body"><span class="format">Watch Â· 03:40</span><div class="story-meta">Breath Â· Posture</div><h3>Breath changes shape.</h3><span>Watch observation â†—</span></div></a>
+    </div></section>
+    <section class="start" id="start"><h2>Start where you are.</h2><div class="steps"><div class="step"><div><b>Choose your lane</b><p>Receive bodywork, learn in a class, or begin with the journal.</p></div></div><div class="step"><div><b>Share what keeps returning</b><p>A brief intake clarifies the pattern, boundaries, and what would make the experience useful.</p></div></div><div class="step"><div><b>Get a specific next step</b><p>No funnel maze: booking details, the right class, or a useful piece to begin with.</p></div></div><a class="button dark" href="mailto:honeycombharmonic@gmail.com?subject=Honeycomb%20Harmonic%20%E2%80%94%20starting%20point">Tell me where youâ€™re starting</a></div></section>
+  </main>
+  <footer><div class="footer-main"><h2>Honeycomb<br><i>Harmonic</i></h2><div><div class="eyebrow">Explore</div><a href="#bodywork">Bodywork</a><a href="#philosophy">Philosophy</a><a href="#classes">Classes</a><a href="#journal">Journal</a></div><div><div class="eyebrow">Begin</div><a href="#start">Start here</a><a href="mailto:honeycombharmonic@gmail.com">Contact</a><a href="#">Policies</a></div><div><div class="eyebrow">Follow</div><a href="#">Instagram</a><a href="#">YouTube</a><a href="#">Newsletter</a></div></div><div class="fine"><span>Â© 2026 Honeycomb Harmonic</span><span>Somatic education and bodywork Â· Not medical diagnosis or treatment</span></div></footer>
+  <script>
+    const filters=document.querySelectorAll('.filter'),stories=document.querySelectorAll('.story');filters.forEach(button=>button.addEventListener('click',()=>{filters.forEach(b=>b.classList.remove('active'));button.classList.add('active');const f=button.dataset.filter;stories.forEach(s=>s.hidden=f!=='all'&&!s.dataset.type.includes(f))}))
+  </script>
+</body>
 </html>
+
