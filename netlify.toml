@@ -1,26 +1,27 @@
 [build]
-  publish = "."
+  publish = "public"
 
 [[headers]]
   for = "/*"
   [headers.values]
-    X-Frame-Options = "DENY"
-    X-Content-Type-Options = "nosniff"
+    Cache-Control = "public, max-age=0, must-revalidate"
+    Content-Security-Policy = "default-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; img-src 'self' data: https:; object-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; upgrade-insecure-requests"
+    Permissions-Policy = "camera=(), geolocation=(), microphone=()"
     Referrer-Policy = "strict-origin-when-cross-origin"
+    Strict-Transport-Security = "max-age=31536000"
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
+
+# Only files deliberately placed under a versioned asset directory receive an
+# immutable cache lifetime. HTML and unversioned files continue to revalidate.
+[[headers]]
+  for = "/assets/v1/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
 
 [[redirects]]
   from = "/bodywork"
   to = "/bodywork.html"
-  status = 200
-
-[[redirects]]
-  from = "/balm"
-  to = "/balm.html"
-  status = 200
-
-[[redirects]]
-  from = "/classes"
-  to = "/classes.html"
   status = 200
 
 [[redirects]]
@@ -29,16 +30,26 @@
   status = 200
 
 [[redirects]]
+  from = "/classes"
+  to = "/classes.html"
+  status = 200
+
+[[redirects]]
+  from = "/balm"
+  to = "/balm.html"
+  status = 200
+
+[[redirects]]
+  from = "/about"
+  to = "/about.html"
+  status = 200
+
+[[redirects]]
   from = "/contact"
   to = "/contact.html"
   status = 200
 
 [[redirects]]
-  from = "/articles"
-  to = "/articles.html"
-  status = 200
-
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
+  from = "/privacy"
+  to = "/privacy.html"
   status = 200

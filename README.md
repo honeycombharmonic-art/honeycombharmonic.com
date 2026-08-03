@@ -1,27 +1,41 @@
-# Honeycomb Harmonic Website
+# Honeycomb Harmonic
 
-Static first-pass website for `honeycombharmonic.com`, designed for GitHub -> Netlify -> GoDaddy DNS.
+Honeycomb Harmonic is a dependency-free static site published at
+`https://honeycombharmonic.com`.
 
-## Publish Path
+## Publication layout
 
-1. Create a new GitHub repository, for example `honeycombharmonic-site`.
-2. Push this folder to the repository root.
-3. In Netlify, choose "Add new site" then "Import an existing project".
-4. Connect the GitHub repo.
-5. Build settings:
-   - Build command: leave blank
-   - Publish directory: `.`
-6. After deploy, add `honeycombharmonic.com` in Netlify under Domain management.
-7. In GoDaddy DNS, point the domain to Netlify using Netlify's current DNS instructions for the site.
+- `public/` is the complete Netlify publish directory.
+- Files retained at the repository root are legacy source material and are not
+  included in deploys.
+- `netlify.toml` defines clean-route rewrites, security headers, and caching.
+- Assets may receive immutable one-year caching only when they are deliberately
+  versioned under `public/assets/v1/`. Increment that directory version whenever
+  a cached asset changes.
 
-## Edit Notes
+There is no build command. Netlify serves the contents of `public/` directly.
 
-- Replace `assets/bodywork-hands.jpg` and `assets/balm-jar.jpg` with real photos when available.
-- Netlify Forms should detect the `honeycomb-contact` form after the first deploy.
-- Product names and pricing are draft placeholders.
-- The site is intentionally dependency-free, so it can publish without a build pipeline.
+## Production and previews
 
-## Image Credits
+Netlify is connected to this GitHub repository. A push merged to `main` creates
+the production deploy. Pull requests create Netlify Deploy Previews, and
+non-production branches can create branch deploys when that feature is enabled
+for the site.
 
-- Bodywork image: Jakub Klucky on Unsplash, `https://unsplash.com/photos/massage-therapist-giving-a-back-massage-7yeqemd-p90`
-- Balm image: Sia Ray on Unsplash, `https://unsplash.com/photos/a-hand-holding-a-small-jar-of-cream-QkAnVbOrvNE`
+For a manual draft preview with the Netlify CLI, authenticate and link the
+repository locally, then run:
+
+```powershell
+netlify deploy --dir=public
+```
+
+The command creates a draft URL; it does not publish production. Production is
+normally promoted through the connected GitHub `main` branch. Keep tokens and
+other secrets in Netlify's environment settings or the local CLI session, never
+in this repository.
+
+## Routes
+
+The public routes are `/`, `/bodywork`, `/philosophy`, `/classes`, `/balm`,
+`/about`, `/contact`, and `/privacy`. Unknown routes return Netlify's normal 404
+response; there is intentionally no catch-all rewrite.
