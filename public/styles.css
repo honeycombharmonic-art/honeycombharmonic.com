@@ -150,20 +150,35 @@ summary:focus-visible {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 5rem;
-  gap: 1.5rem;
+  min-height: 6.5rem;
+  gap: clamp(0.5rem, 2vw, 1.5rem);
+  padding-block: 0.5rem;
 }
 
 .brand {
   display: inline-flex;
   align-items: center;
+  min-width: 0;
   min-height: 44px;
+  gap: clamp(0.625rem, 1.2vw, 1rem);
   color: var(--ink);
   font-family: var(--serif);
   font-size: clamp(1.1rem, 2vw, 1.35rem);
   font-weight: 600;
   letter-spacing: -0.015em;
   text-decoration: none;
+}
+
+.brand-mark {
+  flex: 0 0 auto;
+  width: 5.5rem;
+  height: 5.5rem;
+  object-fit: contain;
+}
+
+.brand-name {
+  line-height: 1.1;
+  text-wrap: balance;
 }
 
 .brand:hover {
@@ -481,7 +496,7 @@ summary:focus-visible {
 @media (max-width: 56.25rem) {
   .site-header .shell {
     flex-wrap: wrap;
-    min-height: 4.5rem;
+    min-height: 5.25rem;
   }
 
   .js .site-header .shell {
@@ -596,6 +611,20 @@ summary:focus-visible {
   .site-footer .shell {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .site-header .brand {
+    gap: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .site-header .brand-mark {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+
+  .site-header .brand-name {
+    max-width: 12ch;
   }
 }
 
