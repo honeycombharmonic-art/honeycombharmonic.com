@@ -8,3 +8,6 @@
 
 /assets/*
   Cache-Control: public, max-age=86400, must-revalidate
+
+/assets/store-catalog.json
+  Cache-Control: public, max-age=0, must-revalidate

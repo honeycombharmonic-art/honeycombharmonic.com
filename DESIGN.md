@@ -16,7 +16,7 @@ The book, balm, and holder use distinct photorealistic studio visualizations wit
 
 The actual session photographs remain authentic and in color. Only responsive resizing and compression are applied to their files. Generative retouch candidates were not used because they changed person/scene details.
 
-The logo and frozen cap master are preserved as source authority. Generated product pictures are illustrative applications, never replacement artwork masters or dimension sources. Following the user's rejection of the split emblem and request to redesign the physical object, the complete front flower and all three nested outlines belong entirely on the glass jar body, clear of the shoulder and base. The cap sidewall stays plain black; the approved circular top retains its artwork. No emblem or botanical line crosses the closure, and the composition does not depend on the screw cap returning to a particular orientation. Keep cap and glass edges black without a white or silver perimeter ring. The current redesign uses `balm-studio-v5-*`; earlier seam-spanning and split-emblem pictures are rejected for current website use.
+The logo and frozen cap master are preserved as source authority. Generated product pictures are illustrative applications, never replacement artwork masters or dimension sources. Following the user's rejection of the split emblem and request to redesign the physical object, the complete front flower and all three nested outlines belong entirely on the glass jar body, clear of the shoulder and base. The cap sidewall stays plain black; the approved circular top retains its artwork. No emblem or botanical line crosses the closure, and the composition does not depend on the screw cap returning to a particular orientation. Keep cap and glass edges black without a white or silver perimeter ring. The current redesign uses `balm-studio-v6-*`; earlier seam-spanning and split-emblem pictures are rejected for current website use.
 
 No tongue depressor, wooden applicator stick, renamed spatula, or equivalent prop may appear in any current or future image or demonstration.
 
@@ -32,8 +32,16 @@ The current cover combines a strong uppercase Roman-style title, anatomically re
 
 ## Prelaunch collection
 
-The catalog includes the book, non-cannabinoid and CBD balm, both pumpable tracks, both refills, the holder, non-CBD and CBD Reserve proposals, and Grip. Ingredient pages distinguish shared materials, format-specific materials, CBD-only additions, and experiments. All prices are proposed. Launch-list saves express interest only; no checkout, payment, inventory, reservation, or launch-date claims.
+The catalog includes the book, non-cannabinoid and CBD balm, both pumpable tracks, the non-CBD refill, the holder, non-CBD and CBD Reserve proposals, and Grip. Ingredient pages distinguish shared materials, format-specific materials, CBD-only additions, and experiments. All prices are proposed. Launch-list saves express interest only; no checkout, payment, inventory, reservation, or launch-date claims.
 
 The homepage introduces the book and balm together. The actual bodywork photographs remain in the practice sections and bodywork page. Product pages add a material study of the book and an open-vessel view of the balm. Every generated product image is identified as a visualization.
 
 The holder image shows the cradle and complete mounting mechanism without a floating lid. The lift-off lid remains part of the prototype description; this view shows it removed. Preserve the full image at narrow widths instead of cropping away the mount. Native CAD and physical qualification are separate from illustrative photography.
+
+## October 20 refinement
+
+Use DM Sans first, medium-weight headings, a restrained scale and comfortable line spacing. The store uses larger two-column product photographs, specific descriptions and distinct format/price information. Copy names the work and the material decisions without generic wellness slogans. Original book excerpts and journal article bodies remain unchanged.
+
+The jar body now carries only its small central emblem; side botanical sprays are removed. The approved lid-top artwork remains. The closed vessel, open vessel and collection photograph use the same treatment.
+
+There is no CBD refill. CBD Reserve has no current price because the previous bundle assumed a refill. The catalog has ten concepts. The holder film uses the original articulated animation with the current all-black finish and no applicator. Its website presentation includes user-initiated playback, captions, a poster and a text description.

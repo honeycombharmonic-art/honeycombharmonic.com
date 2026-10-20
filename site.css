@@ -9,7 +9,7 @@
   --surface-raised: #2b3729;
   --line: #46513e;
   --pad: clamp(24px, 5.5vw, 96px);
-  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "DM Sans", sans-serif;
+  --sans: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --serif: var(--sans);
 }
 * { box-sizing: border-box; }
@@ -20,10 +20,10 @@ button { font: inherit; cursor: pointer; }
 img { display: block; max-width: 100%; height: auto; }
 figure { margin: 0; }
 h1, h2, h3, p { margin-top: 0; }
-h1, h2 { font-family: var(--sans); font-weight: 650; line-height: 1.04; letter-spacing: -.055em; text-wrap: balance; }
-h1 { font-size: clamp(48px, 6.5vw, 96px); margin-bottom: 28px; }
-h2 { font-size: clamp(40px, 4.7vw, 68px); margin-bottom: 26px; }
-h3 { font-size: 23px; font-weight: 600; line-height: 1.2; letter-spacing: -.025em; }
+h1, h2 { font-family: var(--sans); font-weight: 500; line-height: 1.08; letter-spacing: -.035em; text-wrap: balance; }
+h1 { font-size: clamp(44px, 5.5vw, 80px); margin-bottom: 28px; }
+h2 { font-size: clamp(36px, 4.1vw, 60px); margin-bottom: 26px; }
+h3 { font-size: 23px; font-weight: 500; line-height: 1.2; letter-spacing: -.025em; }
 p { margin-bottom: 24px; }
 em { font-style: normal; color: #e6bd78; }
 ::selection { background: var(--gold); color: var(--ink); }
@@ -56,8 +56,8 @@ section[id] { scroll-margin-top: 100px; }
 /* One readable type scale and one action hierarchy across every page. */
 .section { padding: clamp(84px, 9.4vw, 144px) var(--pad); }
 .section > *, .section-heading > * { min-width: 0; }
-.eyebrow { font-size: 17px; line-height: 1.35; font-weight: 600; letter-spacing: -.015em; margin-bottom: 20px; }
-.lead { color: #b9b9c1; font-size: clamp(21px, 2vw, 27px); line-height: 1.4; letter-spacing: -.025em; }
+.eyebrow { font-size: 14px; line-height: 1.5; font-weight: 500; letter-spacing: 0; margin-bottom: 20px; }
+.lead { color: #c7c9bc; font-size: clamp(20px, 1.8vw, 25px); line-height: 1.5; letter-spacing: -.015em; }
 .section-copy { max-width: 570px; }
 .section-copy > p:not(.eyebrow):not(.lead) { max-width: 490px; color: var(--muted); }
 .section-copy .text-link { margin-top: 8px; }
@@ -83,11 +83,11 @@ section[id] { scroll-margin-top: 100px; }
 .home-hero { padding: 64px var(--pad) 0; background: linear-gradient(145deg,#263b2c,#111b15 65%); }
 .hero-copy { text-align: center; max-width: 1080px; margin: 0 auto 42px; }
 .hero-copy .eyebrow { color: var(--gold); margin-bottom: 22px; font-size: 17px; }
-.hero-copy h1 { font-size: clamp(51px, 6.8vw, 100px); line-height: 1.02; margin: 0 auto 26px; max-width: 1050px; }
-.hero-deck { color: #b1b1ba; font-size: clamp(19px, 1.8vw, 25px); line-height: 1.4; letter-spacing: -.02em; margin: 0 auto 28px; max-width: 630px; }
+.hero-copy h1 { font-size: clamp(48px, 6.2vw, 88px); line-height: 1.08; margin: 0 auto 26px; max-width: 1050px; }
+.hero-deck { color: #c4c9ba; font-size: clamp(19px, 1.8vw, 25px); line-height: 1.4; letter-spacing: -.02em; margin: 0 auto 28px; max-width: 630px; }
 .hero-copy .actions { justify-content: center; }
 .hero-photo { position: relative; max-width: 1440px; margin: auto; }
-.hero-photo > img { width: 100%; height: auto; aspect-ratio: 3/2; object-fit: contain; border-radius: 24px; }
+.hero-photo > img { width: 100%; height: auto; aspect-ratio: 3/2; object-fit: contain; border-radius: 12px; }
 .hero-photo figcaption { color: #a1a1aa; font-size: 12px; padding: 14px 4px 0; text-align: right; }
 .directory { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px 45px; padding: 32px 24px 40px; background: #18261c; }
 .directory > p { flex-basis: 100%; text-align: center; font-size: 12px; color: var(--muted); margin: 0; }
@@ -108,20 +108,20 @@ section[id] { scroll-margin-top: 100px; }
 .book-section { background: #302028; }
 .balm-section { grid-template-columns: 1.15fr 1fr; background: #19291f; }
 .book-section .section-copy { margin-left: auto; }
-.book-section h2 { font-size: clamp(48px, 5.2vw, 78px); }
+.book-section h2 { font-size: clamp(42px, 4.5vw, 66px); }
 .balm-section .eyebrow, .product-opening .eyebrow { color: var(--gold); }
 .folio-link { display: block; text-decoration: none; }
 .book-visual, .cap-art { display: flex; flex-direction: column; align-items: center; margin: 0; }
-.book-visual img, .cap-art img { width: 100%; object-fit: contain; border-radius: 20px; }
+.book-visual img, .cap-art img { width: 100%; object-fit: contain; border-radius: 10px; }
 .book-visual figcaption, .cap-art figcaption { margin-top: 17px; font-size: 12px; color: #a7a7af; text-align: center; }
 .holder-section { background: #1b2b2c; }
-.holder-photo img { width: 100%; height: auto; aspect-ratio: 3/2; object-fit: contain; border-radius: 24px; }
+.holder-photo img { width: 100%; height: auto; aspect-ratio: 3/2; object-fit: contain; border-radius: 12px; }
 .holder-photo figcaption { color: #a7a7af; font-size: 12px; margin-top: 16px; }
 .practice-section { display: grid; grid-template-columns: 1.2fr 1fr; background: #422a24; }
 .practice-section > img { width: 100%; height: 100%; min-height: 590px; object-fit: cover; }
 .practice-section > div { padding: 90px var(--pad); align-self: center; }
 .practice-section .eyebrow { color: var(--gold); }
-.practice-section h2 { font-size: clamp(56px, 6vw, 88px); }
+.practice-section h2 { font-size: clamp(44px, 4.8vw, 70px); }
 .practice-section p:not(.eyebrow) { color: #bdb1ba; }
 .journal-invite { display: flex; align-items: end; justify-content: space-between; gap: 32px; }
 .journal-invite .eyebrow { color: var(--muted); }
@@ -130,10 +130,10 @@ section[id] { scroll-margin-top: 100px; }
 /* Reading and product detail pages share the same quiet hierarchy. */
 .book-opening, .product-opening { display: grid; grid-template-columns: 1.15fr 1fr; gap: 6%; align-items: center; background: #19291f; }
 .book-opening { background:#302028; }
-.book-opening h1 { font-size: clamp(46px, 5.1vw, 76px); }
+.book-opening h1 { font-size: clamp(42px, 4.6vw, 68px); }
 .book-opening .book-visual img { height: auto; object-fit: contain; }
 .product-study { margin: 0; }
-.product-study img { width: 100%; height: auto; border-radius: 20px; }
+.product-study img { width: 100%; height: auto; border-radius: 10px; }
 .product-study figcaption { color: #a7a7af; font-size: 12px; margin-top: 16px; line-height: 1.6; }
 .book-material { background: #30251d; display: grid; grid-template-columns: 1.15fr 1fr; gap: 7%; align-items: center; }
 .book-material .section-copy { max-width: 500px; }
@@ -164,7 +164,7 @@ details { border-top: 1px solid var(--line); padding: 18px 0; }
 summary { cursor: pointer; font-size: 16px; min-height: 44px; padding: 10px 20px 10px 0; color: var(--ivory); }
 details p { font-size: 15px; line-height: 1.7; margin: 15px 0 0; color: var(--muted); }
 .holder-opening { background: #1b2b2c; padding-bottom: 54px; }
-.holder-opening h1 { font-size: clamp(44px, 5.5vw, 82px); }
+.holder-opening h1 { font-size: clamp(40px, 4.8vw, 70px); }
 .holder-opening > .breadcrumb { margin-bottom: 36px; }
 .detail-row { border-top: 1px solid var(--line); padding: 28px 0; }
 .detail-row p { margin: 0; color: var(--muted); }
@@ -175,14 +175,14 @@ details p { font-size: 15px; line-height: 1.7; margin: 15px 0 0; color: var(--mu
 .bodywork-opening > img { width: 100%; height: 100%; object-fit: cover; object-position: 53% center; }
 .bodywork-opening .lead { font-size: 24px; }
 .practice-detail { padding: 0 var(--pad); max-width: 1600px; margin: auto; }
-.practice-detail img { width: 100%; max-height: 780px; object-fit: cover; border-radius: 24px; }
+.practice-detail img { width: 100%; max-height: 780px; object-fit: cover; border-radius: 12px; }
 .pullquote { font-size: clamp(30px, 3.2vw, 46px); line-height: 1.25; letter-spacing: -.035em; margin: 0 0 30px; }
 .attribution { font-size: 13px; }
 .contact-section { display: grid; grid-template-columns: 1fr 1fr; gap: 10%; min-height: 76vh; }
-.contact-section h1 { font-size: clamp(48px, 6vw, 88px); }
+.contact-section h1 { font-size: clamp(44px, 5vw, 72px); }
 .contact-options > p { font-size: 14px; color: var(--muted); margin-bottom: 22px; }
 .contact-options > a { display: flex; justify-content: space-between; align-items: center; gap: 24px; padding: 24px 0; min-height: 88px; border-top: 1px solid var(--line); text-decoration: none; }
-.contact-options > a > span:first-child { font-size: 27px; font-weight: 600; letter-spacing: -.035em; }
+.contact-options > a > span:first-child { font-size: 25px; font-weight: 500; letter-spacing: -.02em; }
 .contact-options > a > span:last-child { font-size: 13px; color: var(--muted); }
 .contact-options > a:hover, .contact-options > a:hover > span { color: var(--gold); }
 .email-fallback { margin-top: 30px; padding-top: 24px; border-top: 1px solid var(--line); font-size: 14px; color: var(--muted); }
@@ -239,7 +239,7 @@ details p { font-size: 15px; line-height: 1.7; margin: 15px 0 0; color: var(--mu
   .home-hero { padding: 44px 20px 0; }
   .hero-copy { margin-bottom: 30px; }
   .hero-copy .eyebrow { font-size: 14px; }
-  .hero-copy h1 { font-size: clamp(41px, 10.9vw, 68px); letter-spacing: -.055em; margin-bottom: 24px; }
+  .hero-copy h1 { font-size: clamp(42px, 10.4vw, 64px); letter-spacing: -.035em; margin-bottom: 24px; }
   .hero-deck { font-size: 19px; max-width: 370px; }
   .hero-deck br { display: none; }
   .hero-copy .actions { gap: 10px 20px; }
@@ -255,7 +255,7 @@ details p { font-size: 15px; line-height: 1.7; margin: 15px 0 0; color: var(--mu
   .home-page .intro .eyebrow { margin-bottom: 20px; }
   .home-page .intro h2 { font-size: 41px; }
   .book-section .section-copy { margin: 0; }
-  .book-section h2 { font-size: 54px; }
+  .book-section h2 { font-size: 46px; }
   .book-visual img, .cap-art img { border-radius: 16px; }
   .book-section .folio-link, .book-opening .book-visual, .balm-section .cap-art, .product-opening .cap-art { margin-left: -8px; margin-right: -8px; }
   .balm-section .cap-art { order: 2; }
@@ -268,7 +268,7 @@ details p { font-size: 15px; line-height: 1.7; margin: 15px 0 0; color: var(--mu
   .practice-section { grid-template-columns: 1fr; }
   .practice-section > img { min-height: 0; aspect-ratio: 1.25; object-position: 52% center; }
   .practice-section > div { padding: 70px var(--pad); }
-  .practice-section h2 { font-size: 64px; }
+  .practice-section h2 { font-size: 46px; }
   .journal-invite { align-items: start; flex-direction: column; gap: 20px; }
   .journal-invite h2 { font-size: 42px; }
   .breadcrumb { margin-bottom: 24px; }
@@ -288,12 +288,12 @@ details p { font-size: 15px; line-height: 1.7; margin: 15px 0 0; color: var(--mu
   .reading-copy h2 { font-size: 38px; }
   .reading-copy blockquote { font-size: 20px; line-height: 1.75; }
   .reading-copy section + section { margin-top: 52px; padding-top: 52px; }
-  .product-opening h1 { font-size: 57px; }
+  .product-opening h1 { font-size: 46px; }
   .holder-opening h1 { font-size: clamp(40px, 10.5vw, 60px); }
   .holder-opening { padding-top: 46px; }
   .bodywork-opening { display: flex; flex-direction: column; }
   .bodywork-opening > div { padding: 64px var(--pad); }
-  .bodywork-opening h1 { font-size: 50px; }
+  .bodywork-opening h1 { font-size: 46px; }
   .bodywork-opening > img { height: auto; aspect-ratio: 1.15; }
   .bodywork-opening .lead { font-size: 22px; }
   .practice-detail { padding: 0 16px; }
@@ -324,3 +324,12 @@ details p { font-size: 15px; line-height: 1.7; margin: 15px 0 0; color: var(--mu
   a { color: black; }
   .reading-copy section { break-inside: avoid; }
 }
+
+/* The film is user-controlled and loads only on request. */
+.holder-film { background:#142223; }
+.holder-film video { display:block; width:100%; height:auto; aspect-ratio:16/9; background:#101715; border-radius:10px; }
+.holder-film figcaption { margin:18px 0 0; font-size:13px; color:#bdc8bd; max-width:800px; }
+.film-transcript { margin-top:28px; max-width:900px; }
+.film-transcript ol { padding-left:24px; color:var(--muted); font-size:16px; line-height:1.7; }
+.film-transcript li { padding:7px 0; }
+.film-transcript strong { color:var(--ivory); font-weight:500; }

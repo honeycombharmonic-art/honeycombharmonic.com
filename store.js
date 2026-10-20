@@ -39,7 +39,7 @@
       document.querySelector('.filter-status').textContent = `${count} ${count === 1 ? 'concept' : 'concepts'}`;
     });
   }
-  fetch('/assets/store-catalog.json').then(response => {
+  fetch('/assets/store-catalog.json', {cache:'no-cache'}).then(response => {
     if (!response.ok) throw new Error('Catalog unavailable');
     return response.json();
   }).then(catalog => {
@@ -79,7 +79,7 @@
           a.href = '/shop/' + id;
           a.textContent = p.name;
           const detail = document.createElement('p');
-          detail.textContent = `$${p.price} proposed · ${p.format}`;
+          detail.textContent = `${p.price == null ? 'Price to be determined' : '$' + p.price + ' proposed'} · ${p.format}`;
           const remove = document.createElement('button');
           remove.type = 'button';
           remove.textContent = 'Remove';
@@ -97,7 +97,7 @@
       if (interests && !interests.dataset.edited) {
         interests.value = [...selected].map(id => {
           const p = products.get(id);
-          return `${p.name} — ${p.format} — $${p.price} proposed`;
+          return `${p.name} — ${p.format} — ${p.price == null ? 'Price to be determined' : '$' + p.price + ' proposed'}`;
         }).join('\n');
       }
     }
@@ -118,6 +118,7 @@
         render();
       } catch { /* Keep the last valid selection if another tab writes malformed data. */ }
     });
+    if (persistent) persist();
     render();
   }).catch(() => {
     const notice = document.querySelector('.storage-notice');
