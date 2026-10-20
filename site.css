@@ -327,6 +327,8 @@ details p { font-size: 15px; line-height: 1.7; margin: 15px 0 0; color: var(--mu
 
 /* The film is user-controlled and loads only on request. */
 .holder-film { background:#142223; }
+.holder-opening .section-heading .button { margin-bottom:12px; }
+.holder-opening .section-heading .text-link { display:flex; width:fit-content; }
 .holder-film video { display:block; width:100%; height:auto; aspect-ratio:16/9; background:#101715; border-radius:10px; }
 .holder-film figcaption { margin:18px 0 0; font-size:13px; color:#bdc8bd; max-width:800px; }
 .film-transcript { margin-top:28px; max-width:900px; }
