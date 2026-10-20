@@ -14,7 +14,7 @@ Static HTML, CSS, and a small progressive enhancement script. Navigation, readin
 
 - Book excerpts reproduce the canonical original/approved passages. The book remains a manuscript in development.
 - Harmonic Touch uses the current three-shea development architecture. No retail prices, release date, assay, finished formula, clinical claims, or tested holder compatibility are asserted.
-- The holder image is the existing all-black digital prototype reference. The balm image preserves the approved cap artwork, presented as a design study. Source files remain unchanged.
+- The holder image is the all-black digital prototype reference with the tongue depressor removed, as permanently directed on October 20, 2026. Use `holder-clean-*.webp`; never restore the retired stick imagery. The current editable scene also excludes the stick and its balm dab. The balm image preserves the approved cap artwork, presented as a design study.
 - The original photography and emblem remain in `assets/`. Smaller WebP derivatives serve the redesigned pages.
 - DM Sans and Italiana are served locally. Their OFL licenses are included in `assets/`.
 - Existing Fascial Reconstruction article bodies are preserved; their shared navigation and footer use the new design. The redesign does not constitute scientific verification of their claims.
