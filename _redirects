@@ -1,6 +1,16 @@
+# Extensionless routes; missing pages return 404.
 /bodywork /bodywork.html 200
+/book /book.html 200
 /balm /balm.html 200
+/holder /holder.html 200
+/contact /contact.html 200
 /classes /classes.html 200
 /philosophy /philosophy.html 200
-/contact /contact.html 200
-/* /index.html 200
+/articles /articles.html 200
+/the-parasite-cleanse /the-parasite-cleanse.html 200
+/the-hidden-colony /the-hidden-colony.html 200
+/refurbishing-the-temple /refurbishing-the-temple.html 200
+/clearing-the-scaffold /clearing-the-scaffold.html 200
+/fascial-reconstruction-field-guide /fascial-reconstruction-field-guide.html 200
+/README.md /404.html 404!
+/* /404.html 404
