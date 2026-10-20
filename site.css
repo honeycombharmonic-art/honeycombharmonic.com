@@ -1,13 +1,13 @@
 :root {
   color-scheme: dark;
-  --ink: #0b0c0e;
-  --ivory: #f5f5f7;
-  --gold: #ddbd83;
-  --wine: #ddbd83;
-  --muted: #a6a6ad;
-  --surface: #141518;
-  --surface-raised: #1c1d21;
-  --line: #34353a;
+  --ink: #111511;
+  --ivory: #f6efdf;
+  --gold: #e6bd78;
+  --wine: #ad6871;
+  --muted: #b9b6aa;
+  --surface: #202b21;
+  --surface-raised: #2b3729;
+  --line: #46513e;
   --pad: clamp(24px, 5.5vw, 96px);
   --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "DM Sans", sans-serif;
   --serif: var(--sans);
@@ -25,7 +25,7 @@ h1 { font-size: clamp(48px, 6.5vw, 96px); margin-bottom: 28px; }
 h2 { font-size: clamp(40px, 4.7vw, 68px); margin-bottom: 26px; }
 h3 { font-size: 23px; font-weight: 600; line-height: 1.2; letter-spacing: -.025em; }
 p { margin-bottom: 24px; }
-em { font-style: normal; color: inherit; }
+em { font-style: normal; color: #e6bd78; }
 ::selection { background: var(--gold); color: var(--ink); }
 :focus-visible { outline: 3px solid var(--gold); outline-offset: 5px; border-radius: 4px; }
 a, button, summary { touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
@@ -39,7 +39,7 @@ section[id] { scroll-margin-top: 100px; }
   min-height: 68px; padding: 0 max(24px, calc((100vw - 1200px) / 2));
   display: flex; align-items: center; justify-content: space-between; gap: 32px;
   position: sticky; top: 0; z-index: 20;
-  background: rgba(11,12,14,.94); border-bottom: 1px solid rgba(255,255,255,.08);
+  background: rgba(17,23,18,.96); border-bottom: 1px solid rgba(230,189,120,.2);
   backdrop-filter: saturate(130%) blur(20px);
 }
 .brand { display: flex; gap: 11px; align-items: center; flex-shrink: 0; text-decoration: none; }
@@ -79,18 +79,17 @@ section[id] { scroll-margin-top: 100px; }
 .section-heading p { color: var(--muted); margin-bottom: 12px; }
 .section-heading .eyebrow { color: var(--ivory); }
 
-/* The first image is the real practice, given a wide photographic stage. */
-.home-hero { padding: 78px var(--pad) 0; background: #08090b; }
-.hero-copy { text-align: center; max-width: 1080px; margin: 0 auto 58px; }
+/* A shared photographic stage introduces the book and balm. */
+.home-hero { padding: 64px var(--pad) 0; background: linear-gradient(145deg,#263b2c,#111b15 65%); }
+.hero-copy { text-align: center; max-width: 1080px; margin: 0 auto 42px; }
 .hero-copy .eyebrow { color: var(--gold); margin-bottom: 22px; font-size: 17px; }
 .hero-copy h1 { font-size: clamp(51px, 6.8vw, 100px); line-height: 1.02; margin: 0 auto 26px; max-width: 1050px; }
 .hero-deck { color: #b1b1ba; font-size: clamp(19px, 1.8vw, 25px); line-height: 1.4; letter-spacing: -.02em; margin: 0 auto 28px; max-width: 630px; }
 .hero-copy .actions { justify-content: center; }
 .hero-photo { position: relative; max-width: 1440px; margin: auto; }
-.hero-photo > img { width: 100%; aspect-ratio: 1.9; object-fit: cover; object-position: 50% 10%; border-radius: 24px; }
-.hero-photo > img, .practice-section > img, .bodywork-opening > img, .practice-detail img { filter: grayscale(1); }
+.hero-photo > img { width: 100%; height: auto; aspect-ratio: 3/2; object-fit: contain; border-radius: 24px; }
 .hero-photo figcaption { color: #a1a1aa; font-size: 12px; padding: 14px 4px 0; text-align: right; }
-.directory { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px 45px; padding: 32px 24px 40px; background: #08090b; }
+.directory { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px 45px; padding: 32px 24px 40px; background: #18261c; }
 .directory > p { flex-basis: 100%; text-align: center; font-size: 12px; color: var(--muted); margin: 0; }
 .directory > a { display: inline-flex; gap: 10px; align-items: center; text-decoration: none; font-size: 15px; min-height: 44px; }
 .directory > a:hover { color: var(--gold); }
@@ -98,7 +97,7 @@ section[id] { scroll-margin-top: 100px; }
 .intro { display: grid; grid-template-columns: 1fr 2fr; gap: 10%; max-width: 1440px; margin: auto; }
 .intro > div { max-width: 780px; }
 .intro > div > p:not(.lead) { color: var(--muted); max-width: 620px; }
-.home-page .intro { text-align: center; display: block; padding-top: 120px; padding-bottom: 120px; }
+.home-page .intro { text-align: center; display: block; padding-top: 120px; padding-bottom: 120px; background:#30231b; max-width:none; }
 .home-page .intro > div, .home-page .intro p { margin-left: auto; margin-right: auto; }
 .home-page .intro .eyebrow { color: var(--muted); }
 .home-page .intro h2 { max-width: 850px; margin-left: auto; margin-right: auto; }
@@ -106,8 +105,8 @@ section[id] { scroll-margin-top: 100px; }
 
 /* Photographic product chapters. */
 .book-section, .balm-section { display: grid; grid-template-columns: 1fr 1.15fr; align-items: center; gap: 6%; }
-.book-section { background: #141518; }
-.balm-section { grid-template-columns: 1.15fr 1fr; background: #08090b; }
+.book-section { background: #302028; }
+.balm-section { grid-template-columns: 1.15fr 1fr; background: #19291f; }
 .book-section .section-copy { margin-left: auto; }
 .book-section h2 { font-size: clamp(48px, 5.2vw, 78px); }
 .balm-section .eyebrow, .product-opening .eyebrow { color: var(--gold); }
@@ -115,10 +114,10 @@ section[id] { scroll-margin-top: 100px; }
 .book-visual, .cap-art { display: flex; flex-direction: column; align-items: center; margin: 0; }
 .book-visual img, .cap-art img { width: 100%; object-fit: contain; border-radius: 20px; }
 .book-visual figcaption, .cap-art figcaption { margin-top: 17px; font-size: 12px; color: #a7a7af; text-align: center; }
-.holder-section { background: #141518; }
-.holder-photo img { width: 100%; aspect-ratio: 16/9; object-fit: cover; border-radius: 24px; }
+.holder-section { background: #1b2b2c; }
+.holder-photo img { width: 100%; height: auto; aspect-ratio: 3/2; object-fit: contain; border-radius: 24px; }
 .holder-photo figcaption { color: #a7a7af; font-size: 12px; margin-top: 16px; }
-.practice-section { display: grid; grid-template-columns: 1.2fr 1fr; background: #1a1116; }
+.practice-section { display: grid; grid-template-columns: 1.2fr 1fr; background: #422a24; }
 .practice-section > img { width: 100%; height: 100%; min-height: 590px; object-fit: cover; }
 .practice-section > div { padding: 90px var(--pad); align-self: center; }
 .practice-section .eyebrow { color: var(--gold); }
@@ -129,9 +128,16 @@ section[id] { scroll-margin-top: 100px; }
 .journal-invite h2 { margin: 0; }
 
 /* Reading and product detail pages share the same quiet hierarchy. */
-.book-opening, .product-opening { display: grid; grid-template-columns: 1.15fr 1fr; gap: 6%; align-items: center; background: #101113; }
+.book-opening, .product-opening { display: grid; grid-template-columns: 1.15fr 1fr; gap: 6%; align-items: center; background: #19291f; }
+.book-opening { background:#302028; }
 .book-opening h1 { font-size: clamp(46px, 5.1vw, 76px); }
-.book-opening .book-visual img { min-height: 360px; object-fit: cover; }
+.book-opening .book-visual img { height: auto; object-fit: contain; }
+.product-study { margin: 0; }
+.product-study img { width: 100%; height: auto; border-radius: 20px; }
+.product-study figcaption { color: #a7a7af; font-size: 12px; margin-top: 16px; line-height: 1.6; }
+.book-material { background: #30251d; display: grid; grid-template-columns: 1.15fr 1fr; gap: 7%; align-items: center; }
+.book-material .section-copy { max-width: 500px; }
+.sensory .product-study { margin-top: 40px; }
 .reading-section { display: grid; grid-template-columns: 1fr 2.4fr; gap: 10%; align-items: start; max-width: 1450px; margin: auto; }
 .reading-section aside { position: sticky; top: 110px; }
 .reading-section aside nav { display: flex; flex-direction: column; align-items: start; gap: 12px; }
@@ -157,13 +163,13 @@ section[id] { scroll-margin-top: 100px; }
 details { border-top: 1px solid var(--line); padding: 18px 0; }
 summary { cursor: pointer; font-size: 16px; min-height: 44px; padding: 10px 20px 10px 0; color: var(--ivory); }
 details p { font-size: 15px; line-height: 1.7; margin: 15px 0 0; color: var(--muted); }
-.holder-opening { background: #101113; padding-bottom: 54px; }
+.holder-opening { background: #1b2b2c; padding-bottom: 54px; }
 .holder-opening h1 { font-size: clamp(44px, 5.5vw, 82px); }
 .holder-opening > .breadcrumb { margin-bottom: 36px; }
 .detail-row { border-top: 1px solid var(--line); padding: 28px 0; }
 .detail-row p { margin: 0; color: var(--muted); }
 .holder-notes .text-link { margin-top: 24px; }
-.bodywork-opening { display: grid; grid-template-columns: 1fr 1.15fr; background: #08090b; }
+.bodywork-opening { display: grid; grid-template-columns: 1fr 1.15fr; background: #2d271c; }
 .bodywork-opening > div { padding: 105px var(--pad); }
 .bodywork-opening h1 { font-size: clamp(44px, 5.1vw, 78px); }
 .bodywork-opening > img { width: 100%; height: 100%; object-fit: cover; object-position: 53% center; }
@@ -189,7 +195,7 @@ details p { font-size: 15px; line-height: 1.7; margin: 15px 0 0; color: var(--mu
 .simple-page .lead { max-width: 700px; }
 .simple-page p:not(.eyebrow):not(.lead) { color: var(--muted); }
 
-.site-footer { padding: 64px var(--pad) 28px; background: #08090b; border-top: 1px solid #25262b; }
+.site-footer { padding: 64px var(--pad) 28px; background: #101a13; border-top: 1px solid #43513a; }
 .footer-top { display: flex; justify-content: space-between; align-items: center; gap: 28px; padding-bottom: 46px; }
 .footer-wordmark { font-size: clamp(25px, 2.8vw, 38px); font-weight: 600; letter-spacing: -.04em; text-decoration: none; }
 .footer-top p { color: var(--muted); font-size: 14px; margin: 12px 0 0; }
@@ -230,14 +236,14 @@ details p { font-size: 15px; line-height: 1.7; margin: 15px 0 0; color: var(--mu
   .button { font-size: 14px; padding: 14px 22px; }
   .text-link { font-size: 16px; }
   .actions { gap: 14px 24px; }
-  .home-hero { padding: 60px 20px 0; }
-  .hero-copy { margin-bottom: 40px; }
+  .home-hero { padding: 44px 20px 0; }
+  .hero-copy { margin-bottom: 30px; }
   .hero-copy .eyebrow { font-size: 14px; }
   .hero-copy h1 { font-size: clamp(41px, 10.9vw, 68px); letter-spacing: -.055em; margin-bottom: 24px; }
   .hero-deck { font-size: 19px; max-width: 370px; }
   .hero-deck br { display: none; }
   .hero-copy .actions { gap: 10px 20px; }
-  .hero-photo > img { aspect-ratio: 1.06; object-position: 53% center; border-radius: 16px; }
+  .hero-photo > img { aspect-ratio: 3/2; border-radius: 16px; }
   .hero-photo figcaption { font-size: 11px; padding-top: 12px; text-align: center; }
   .directory { gap: 8px 25px; padding: 22px 20px 30px; }
   .directory > p { font-size: 11px; }
@@ -257,7 +263,7 @@ details p { font-size: 15px; line-height: 1.7; margin: 15px 0 0; color: var(--mu
   .section-heading { grid-template-columns: 1fr; gap: 26px; margin-bottom: 34px; }
   .section-heading > div:last-child { max-width: none; }
   .holder-photo { margin-left: -8px; margin-right: -8px; }
-  .holder-photo img { aspect-ratio: 1.12; object-position: 60% center; border-radius: 16px; }
+  .holder-photo img { aspect-ratio: 3/2; object-fit: contain; border-radius: 16px; }
   .holder-photo figcaption { font-size: 11px; margin: 14px 8px 0; }
   .practice-section { grid-template-columns: 1fr; }
   .practice-section > img { min-height: 0; aspect-ratio: 1.25; object-position: 52% center; }
@@ -268,6 +274,13 @@ details p { font-size: 15px; line-height: 1.7; margin: 15px 0 0; color: var(--mu
   .breadcrumb { margin-bottom: 24px; }
   .book-opening h1 { font-size: 45px; }
   .book-opening .book-visual img { min-height: 0; }
+  .book-opening, .product-opening { padding-top: 32px; padding-bottom: 48px; gap: 28px; }
+  .book-opening .breadcrumb, .product-opening .breadcrumb { margin-bottom: 16px; }
+  .book-opening .status, .product-opening .status { margin-bottom: 18px; }
+  .book-material { grid-template-columns: 1fr; gap: 30px; }
+  .product-study img { border-radius: 16px; }
+  .product-study figcaption { font-size: 11px; }
+  .sensory .product-study { margin-top: 30px; }
   .reading-section { display: block; }
   .reading-section aside { position: static; margin-bottom: 52px; padding-bottom: 28px; border-bottom: 1px solid var(--line); }
   .reading-section aside nav { flex-direction: row; flex-wrap: wrap; gap: 12px 26px; }
