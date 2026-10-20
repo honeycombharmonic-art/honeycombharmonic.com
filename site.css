@@ -335,3 +335,6 @@ details p { font-size: 15px; line-height: 1.7; margin: 15px 0 0; color: var(--mu
 .film-transcript ol { padding-left:24px; color:var(--muted); font-size:16px; line-height:1.7; }
 .film-transcript li { padding:7px 0; }
 .film-transcript strong { color:var(--ivory); font-weight:500; }
+
+/* Jar labeling */
+.jar-labeling{background:#151e19}.label-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px;margin-top:48px}.label-grid figure{margin:0;min-width:0}.label-grid img{display:block;width:100%;height:auto;border-radius:14px}.label-grid figcaption{padding-top:15px;color:var(--muted,#b0b7a9);font-size:.85rem;line-height:1.5}.label-grid figcaption a{color:inherit;text-underline-offset:4px}@media(max-width:760px){.label-grid{grid-template-columns:1fr;gap:36px;margin-top:28px}}

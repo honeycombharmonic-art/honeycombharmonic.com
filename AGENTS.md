@@ -8,12 +8,13 @@
 - Preserve the canonical book passages, approved cap artwork, and unrelated website design when making focused changes.
 - Book-cover direction: the almost-touching hands of Adam and God belong inside the three nested honeycomb outlines, with Adam at lower left and God at upper right. The artwork follows that rising diagonal. Hands, outlines, and typography form one coherent gold design on black linen. No flower on the book. Apply the same cover to every book image and social preview.
 - Author lettering is ANSON KEMPER, all capitals. The current cover has a strong uppercase Roman-style title.
-- UV glass must appear black, never purple. Current jar imagery uses `balm-studio-v6-*`.
+- UV glass must appear black, never purple. Current jar imagery uses `balm-studio-v7-*`.
 - Keep the dark site colorful: forest green, burgundy, copper, warm gold, and authentic color session photography. Do not restore grayscale styling.
 - The store is prelaunch only. All prices are proposals, and product images are development visualizations. Preserve the distinction between earlier planning bands and new estimates. No orders, reservations, payments, final formulas, potency claims, or release dates.
 - The launch-interest form uses Netlify Forms. Verify registration and persisted submissions when changing it. Never report a successful signup from an HTTP response alone.
 
 - There is no CBD refill. Never restore a CBD refill SKU, launch-list option, comparison row, or Reserve bundle. CBD Reserve currently has no proposed price; its former bundle price was withdrawn.
-- Refined jar body: one small central emblem on plain black glass. No botanical sprays on the body. Preserve the approved lid-top botanical artwork. Current related imagery: `balm-open-v2-*`, `campaign-adam-v2-*`.
+- Jar body: small central emblem above HARMONIC TOUCH in capitals and BODYWORK BALM below. No botanical sprays on the body. Preserve the approved lid-top botanical artwork. Current related imagery: `balm-open-v3-*`, `campaign-adam-v3-*`.
+- Put ingredients and product information on the reverse, and a real scannable QR on the underside. Original-balm QR destination: https://honeycombharmonic.com/shop/balm. The current label is a prelaunch proof; never invent the final ingredient declaration, net contents, responsible-party address, lot number or legal clearance. CBD labeling must use its own formula and destination.
 - Site text uses specific product and practice language. Preserve manuscript quotations and article bodies. Use DM Sans as the primary web type family with medium-weight headings.
 - Holder film: use the 46-second all-black no-applicator render `holder-studio-film-v2.mp4`. Present as CGI prototype operation with native playback controls, captions and text description. No autoplay; no claims of tested physical compatibility.

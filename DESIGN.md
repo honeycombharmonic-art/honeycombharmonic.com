@@ -42,6 +42,8 @@ The holder image shows the cradle and complete mounting mechanism without a floa
 
 Use DM Sans first, medium-weight headings, a restrained scale and comfortable line spacing. The store uses larger two-column product photographs, specific descriptions and distinct format/price information. Copy names the work and the material decisions without generic wellness slogans. Original book excerpts and journal article bodies remain unchanged.
 
-The jar body now carries only its small central emblem; side botanical sprays are removed. The approved lid-top artwork remains. The closed vessel, open vessel and collection photograph use the same treatment.
+The jar body carries a small central emblem above HARMONIC TOUCH in finely spaced gold capitals and BODYWORK BALM beneath. Side botanical sprays are removed. The approved lid-top artwork remains. The closed vessel, open vessel and collection photograph use the same treatment.
+
+The reverse carries the development ingredient list, use cautions, product contact and not-for-sale status. The underside has a high-contrast ivory QR label. The original-balm code links to its product page and must decode correctly in both responsive image sizes. Do not replace on-package information with the QR. The artwork is a prelaunch proof: the released ingredient declaration, measured net contents, responsible business identity/address, final warnings and lot identifier remain release requirements. The reverse and base views appear on the original non-CBD balm pages only.
 
 There is no CBD refill. CBD Reserve has no current price because the previous bundle assumed a refill. The catalog has ten concepts. The holder film uses the original articulated animation with the current all-black finish and no applicator. Its website presentation includes user-initiated playback, captions, a poster and a text description.
