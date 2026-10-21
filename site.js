@@ -38,3 +38,14 @@
     });
   }
 })();
+
+// Review tools load only through an explicit review link.
+if (new URLSearchParams(location.search).get('review') === '1') {
+  const styles = document.createElement('link');
+  styles.rel = 'stylesheet';
+  styles.href = '/review.css';
+  document.head.append(styles);
+  const review = document.createElement('script');
+  review.src = '/review.js';
+  document.body.append(review);
+}
