@@ -30,7 +30,7 @@ October 20 photographic refinement: keep decoration thin and flush to its substr
 
 ## Book identity and photographic review
 
-October 20 user correction: the book artwork is the almost-touching fingers of Adam and God, within the honeycomb trio, with no flower. Follow the user's annotated rising diagonal: Adam reaches from lower left and God from upper right. Unify the hands, three outlines, title, and author name as one restrained gold foil treatment on black linen. The gap remains visible at the center. A brown painting pasted into a gold frame is superseded.
+October 20 user correction: the book artwork is the almost-touching fingers of Adam and God, within the honeycomb trio, with no flower. Follow the user's annotated rising diagonal: Adam reaches from lower left and God from upper right. Unify the hands, three outlines, title, and author name as one restrained flat gold-color ink treatment on black linen. The gap remains visible at the center. A brown painting pasted into a gold frame is superseded.
 
 The hand-pose reference is Michelangelo's *The Creation of Adam*, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Hands_of_God_and_Adam.jpg). This is a generated cover interpretation, not a reproduction master or an approved print production file.
 
@@ -55,3 +55,11 @@ The reverse carries the development ingredient list, use cautions, product conta
 There is no CBD refill. CBD Reserve has no current price because the previous bundle assumed a refill. The catalog has ten concepts. The holder film uses the original articulated animation with the current all-black finish and no applicator. Its website presentation includes user-initiated playback, captions, a poster and a text description.
 
 The v3 holder film corrects shadow flashing in the removal and reattachment shots. Validate motion continuously and compare every frame for brightness reversals; successful playback and clean still frames alone do not establish visual stability.
+
+## October 21 flat print and page ornament
+
+Product imagery now uses flat gold-color and ivory printing throughout. Artwork must never suggest raised precious-metal fabrication, inlaid strips, metal beads or sculpted petals. Keep the jar underside black and preserve the elegant reverse labels and their scannable codes. The selected filenames in the HTML are the current display baseline.
+
+A small original engraved-style bee punctuates selected opening text and the shared footer. Fine open honeycomb cells sit in spare margins on the home introduction, volume overview, store introduction and related-page transitions. One shared wall per cell, quiet gold ink, no tiled pattern or effects; reduce or omit marginal geometry on narrow screens. These are page illustrations, not changes to product artwork.
+
+Reference review: [Bee de Chaumet](https://www.chaumet.com/en-us/pages/bee-de-chaumet) informed the clean linked geometry and space around objects; [Guerlain Abeille Royale](https://www.guerlain.com/fr/fr-fr/c/abeille-royale-eu.html) informed the small bee signature. Our bee illustration is original, and the honeycomb is native vector geometry. No borrowed logos or metallic surface treatments.
