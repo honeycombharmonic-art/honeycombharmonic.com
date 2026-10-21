@@ -2,7 +2,7 @@
 
 - Publish through this GitHub repository's `main` branch and its connected Netlify project. Verify the published commit and custom domain.
 - Permanent user direction, October 20, 2026: “the tongue depresser is out. of everything. forever”. Do not include tongue depressors or wooden applicator sticks in product designs, demonstrations, imagery, animations, copy, or future assets.
-- Use the holder images named `holder-studio-v2-*.webp`, derived from the current clean reference with the mount visible and no floating lid. Preserve the full composition on mobile. Do not restore retired holder images from Git history.
+- Use the holder images named `holder-practice-v1-*.webp`, derived from the approved `holder-studio-v2` geometry with the mount visible and no floating lid. Preserve the full composition on mobile. Do not restore retired holder images from Git history.
 - Apple is the primary website design reference. Keep the dark palette, restrained warm-gold accents, clear sans-serif hierarchy, generous space, compact navigation, and large product photography. See DESIGN.md.
 - Image quality is a release requirement: elegant, photorealistic product studies and authentic session photography. Preserve actual people, the original identity and approved product direction. Never substitute generated faces for people in the real photos.
 - Preserve the canonical book passages, approved cap artwork, and unrelated website design when making focused changes.
@@ -20,3 +20,6 @@
 - Holder film: use the 46-second all-black no-applicator render `holder-studio-film-v3.mp4`. Present as CGI prototype operation with native playback controls, captions and text description. No autoplay; no claims of tested physical compatibility.
 
 - Temporal video review: evaluate every frame for brightness jumps inside each shot, not only decoding or selected stills. The published v3 film repairs unstable floor shadows in shots 5 and 7; the corrected source keys light shadow maximum resolution to 0.01 m for removal and 0.05 m for reattachment, with 128 render samples. Keep geometry, articulation, timing and audio unchanged for this repair.
+
+- October 21: use the contextual product images in the current page references. Vary backgrounds and materials by format while preserving product identity. The book is two volumes: The Hidden Pattern (philosophy and symbolic history) and The Living Practice (bodywork, relational work, and societies), with working titles and chapter structures. Preserve approved manuscript quotations. Two-volume pricing is unannounced.
+- Pumpable front must say HARMONIC TOUCH. Both pump backs use the approved `pump[-cbd]-reverse-elegant-v2` designs: fine gold and ivory type directly on black glass, ingredient direction, and a compact framed QR. The oversized rectangular-label drafts were rejected. Both responsive image sizes must decode to the corresponding `/shop/pumpable` or `/shop/pumpable-cbd` page.

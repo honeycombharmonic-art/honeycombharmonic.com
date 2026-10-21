@@ -12,6 +12,12 @@ Keep all routes coherent, including the book reader, journal, contact page, and 
 
 ## Imagery
 
+October 21 update: product imagery now has distinct contextual settings: walnut study for the two books, green marble and shea for the original balm, burgundy cloth for CBD, a bodywork table for the pumpable and holder, reusable vessel context for the refill, copper for Reserve, and a resin/wax material study for Grip. The current HTML references identify the selected versions. Maintain approved vessel geometry and identity; the film remains v3.
+
+The book is shown as two coordinated black linen volumes: The Hidden Pattern and The Living Practice. Volume labels sit beneath the shared title and above the shared hands-and-hexagons artwork. The website previews philosophical and symbolic history in Volume I, and bodywork, relationship, and living social architecture in Volume II. Titles and chapter structure remain provisional.
+
+The approved pump reverse design prints fine gold and ivory lettering directly onto black glass, with a compact high-contrast framed QR near the base. Anson rejected the large utilitarian rectangular label. Ingredients remain a development direction rather than a final released ingredient declaration. Original and CBD codes have separate product destinations.
+
 The book, balm, and holder use distinct photorealistic studio visualizations with coherent low-key lighting and dark backgrounds. They are labeled as developmental or conceptual work. They are not proof of a manufactured product, an approved final cover, or validated fit.
 
 The actual session photographs remain authentic and in color. Only responsive resizing and compression are applied to their files. Generative retouch candidates were not used because they changed person/scene details.
