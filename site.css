@@ -358,9 +358,9 @@ details p { font-size: var(--type-body); line-height: 1.7; margin: 15px 0 0; col
 
 
 /* Small flat-ink bee signatures and open honeycomb geometry. */
-.bee-signature > .eyebrow::before,.site-footer::before{content:"";display:block;width:58px;height:50px;background:url('/assets/golden-bee-refined-v2.webp') center/contain no-repeat;opacity:.9;filter:brightness(1.5) saturate(.7);pointer-events:none}
+.hero-bee,.bee-signature > .eyebrow::before,.site-footer::before{content:"";display:block;width:58px;height:50px;background:url('/assets/golden-bee-refined-v2.webp') center/contain no-repeat;opacity:.9;filter:brightness(1.5) saturate(.7);pointer-events:none}
 .bee-signature > .eyebrow::before{display:inline-block;width:54px;height:46px;margin:0 12px 0 0;vertical-align:middle;opacity:1}
-.hero-copy.bee-signature > .eyebrow::before{display:block;width:60px;height:50px;margin:0 auto 12px}
+.hero-bee{width:60px;height:50px;margin:0 auto 24px;opacity:1}
 .site-footer::before{width:48px;height:42px;margin:0 auto 30px;opacity:.9}
 .home-page .intro,.book-volumes,.store-intro,.section.related{position:relative;isolation:isolate}
 .home-page .intro::after,.book-volumes::after,.store-intro::after,.section.related::after{content:"";position:absolute;right:var(--pad);top:65px;width:220px;height:150px;background:url('/assets/honeycomb-fine-v1.svg') center/contain no-repeat;opacity:.5;pointer-events:none;z-index:-1}
@@ -368,5 +368,5 @@ details p { font-size: var(--type-body); line-height: 1.7; margin: 15px 0 0; col
 .section.related::after{top:50px;width:200px;opacity:.4}
 @media(min-width:1101px){.store-intro{padding-right:calc(var(--pad) + 240px)}}
 @media(max-width:1100px){.book-volumes::after,.store-intro::after{display:none}.home-page .intro::after{width:125px;bottom:8px;left:0;opacity:.22}}
-@media(max-width:760px){.bee-signature > .eyebrow::before{width:44px;height:38px;margin:0 10px 0 0}.hero-copy.bee-signature > .eyebrow::before{width:46px;height:40px}.site-footer::before{width:42px;height:38px;margin-bottom:22px}.section.related::after{top:26px;right:18px;width:110px;height:76px;opacity:.25}.home-page .intro::after{display:none}}
-@media print{.bee-signature > .eyebrow::before,.home-page .intro::after,.book-volumes::after,.store-intro::after,.section.related::after{display:none}}
+@media(max-width:760px){.bee-signature > .eyebrow::before{width:44px;height:38px;margin:0 10px 0 0}.hero-bee{width:46px;height:40px}.site-footer::before{width:42px;height:38px;margin-bottom:22px}.section.related::after{top:26px;right:18px;width:110px;height:76px;opacity:.25}.home-page .intro::after{display:none}}
+@media print{.hero-bee,.bee-signature > .eyebrow::before,.home-page .intro::after,.book-volumes::after,.store-intro::after,.section.related::after{display:none}}
