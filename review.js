@@ -109,9 +109,22 @@
       createdAt: new Date().toISOString()
     };
   }
-  function screenPoints(mark) {
+  function resolveTarget(mark) {
     let el;
     try { el = document.querySelector(mark.selector); } catch { /* Older drafts may refer to removed elements. */ }
+    // Keep image notes attached when a layout adds a frame or moves a figure.
+    if (mark.image) {
+      const images = [...document.querySelectorAll('main img')];
+      const byDescription = images.filter(image => image.alt.trim() === mark.target);
+      if (byDescription.length === 1) return byDescription[0];
+      const bySource = images.filter(image => image.currentSrc === mark.image || image.src === mark.image);
+      if (bySource.length === 1) return bySource[0];
+      if (el?.tagName !== 'IMG' || (el.alt.trim() !== mark.target && el.currentSrc !== mark.image && el.src !== mark.image)) return null;
+    }
+    return el;
+  }
+  function screenPoints(mark) {
+    const el = resolveTarget(mark);
     if (el) {
       const box = el.getBoundingClientRect();
       return mark.points.map(([x, y]) => [box.left + x * box.width, box.top + y * box.height]);
@@ -265,7 +278,7 @@
     if (button.dataset.markAction === 'remove') { snapshot(); marks = marks.filter(item => item.id !== mark.id); persist(); showNotes(); }
     if (button.dataset.markAction === 'locate') {
       notesDialog.close(); selectTool('browse');
-      const element = document.querySelector(mark.selector);
+      const element = resolveTarget(mark);
       if (element) element.scrollIntoView({ block: 'center', behavior: 'instant' });
       else scrollTo({ top: Math.max(0, mark.originalPoints[0][1] - innerHeight / 2), behavior: 'instant' });
       render();

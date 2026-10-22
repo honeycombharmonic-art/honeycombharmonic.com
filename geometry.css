@@ -1,0 +1,184 @@
+/* Image composition: Persian field / border / medallion, on six paired tracks.
+   sqrt(3)/2 is the height-to-side ratio of an equilateral triangle. It governs
+   the central field width; one half of a sixth supplies the staggered rhythm.
+   Original photographs stay whole. The geometry belongs to the page. */
+:root {
+  --field-width: 86.60254%;
+  --field-gold: #ba975b;
+  --field-line: #b89a5c59;
+  --field-gutter: clamp(24px, 4.1667vw, 72px);
+  --field-step: clamp(64px, 8.3333vw, 144px);
+}
+
+.image-mat {
+  display: block;
+  position: relative;
+  min-width: 0;
+  width: 100%;
+  padding: clamp(14px, 1.8vw, 28px);
+  border: 1px solid var(--field-line);
+  background: #121c17;
+}
+.image-mat::before, .image-mat::after {
+  content: "";
+  position: absolute;
+  width: clamp(44px, 5vw, 76px);
+  aspect-ratio: 1;
+  background: url('/assets/arabesque-corner.svg') center / contain no-repeat;
+  pointer-events: none;
+  opacity: .8;
+}
+.image-mat::before { top: -8px; left: -8px; }
+.image-mat::after { right: -8px; bottom: -8px; transform: rotate(180deg); }
+main .image-mat > img {
+  width: 100%; height: auto; max-height: none;
+  aspect-ratio: auto 3 / 2; object-fit: contain; border-radius: 0;
+}
+.book-visual, .cap-art { display: block; }
+.book-visual figcaption, .cap-art figcaption, .product-study figcaption,
+.product-stage figcaption, .holder-photo figcaption, .hero-photo figcaption {
+  text-align: left; padding: 0; margin: 18px 0 0;
+}
+
+/* The opening photograph is the medallion; the border is a quiet, open field. */
+.home-hero { padding-bottom: 48px; }
+.hero-copy { margin-bottom: 96px; }
+.hero-photo { width: var(--field-width); max-width: 1240px; isolation: isolate; }
+.hero-photo::before {
+  content: ""; position: absolute; z-index: -1; pointer-events: none;
+  width: 260px; aspect-ratio: 1; left: 50%; top: -76px;
+  transform: translateX(-50%);
+  background: url('/assets/sixfold-medallion.svg') center / contain no-repeat;
+  opacity: .5;
+}
+.hero-photo .image-mat { padding: clamp(24px, 3.333vw, 48px); background: #17251c; }
+.hero-photo .image-mat::before, .hero-photo .image-mat::after { width: clamp(72px, 10vw, 140px); }
+
+/* Paired chapters read as one staggered garden, not independent banners. */
+.collection-garden {
+  display: grid; grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 0 var(--field-gutter); padding: 120px var(--pad) 120px;
+  background: #19241f; position: relative; isolation: isolate;
+}
+.collection-garden::before {
+  content: ""; position: absolute; left: calc(50% - 36px); top: 20px;
+  width: 72px; height: 72px; opacity: .6; pointer-events: none;
+  background: url('/assets/sixfold-medallion.svg') center / contain no-repeat;
+}
+.collection-garden > .section {
+  display: flex; flex-direction: column; gap: 0; align-items: stretch;
+  grid-column: span 6; padding: 0; background: none; min-width: 0;
+}
+.collection-garden .balm-section { margin-top: var(--field-step); }
+.collection-garden .folio-link, .collection-garden .cap-art { order: 0; margin: 0; }
+.collection-garden .section-copy { order: 1; margin: 36px 0 0; max-width: 100%; }
+.collection-garden .book-visual .image-mat { background: #2a2124; }
+.collection-garden .cap-art .image-mat { background: #172b21; }
+.collection-garden .section-copy > p { max-width: 44ch; }
+
+/* The same image / open-space ratio governs product and practice openings. */
+.book-opening, .product-opening {
+  grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: var(--field-gutter);
+  padding-top: 58px; padding-bottom: 82px;
+}
+.book-opening .book-visual, .product-opening .cap-art { margin: calc(var(--field-step) / 2) 0 0; }
+.book-opening .image-mat, .book-material .image-mat { background: #2a2124; }
+.book-material { grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: var(--field-gutter); }
+.book-material .section-copy { padding-top: var(--field-step); }
+.holder-photo { width: var(--field-width); max-width: 1240px; margin: 0 auto; }
+.holder-photo .image-mat { background: #152729; }
+.holder-section .section-heading, .holder-opening .section-heading { margin-bottom: 68px; }
+.holder-film > figure { width: var(--field-width); margin: auto; }
+.holder-film video { border-radius: 0; outline: 1px solid var(--field-line); outline-offset: 12px; }
+.label-grid { grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: var(--field-gutter); align-items: start; }
+.label-grid > figure:nth-child(2) { margin-top: var(--field-step); }
+.sensory { grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: var(--field-gutter); }
+.sensory > ol { padding-top: var(--field-step); }
+.pump-labeling { grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: var(--field-gutter); }
+.pump-labeling > .section-copy { padding-top: var(--field-step); }
+.pump-labeling figure { max-width: none; }
+
+.practice-section, .bodywork-opening {
+  padding: 90px var(--pad); gap: var(--field-gutter); align-items: center;
+  grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+}
+.practice-section > div { padding: var(--field-step) 0 0; }
+.bodywork-opening { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); }
+.bodywork-opening > div { padding: 0; }
+.bodywork-opening > .image-mat { margin-top: var(--field-step); }
+.practice-detail { width: var(--field-width); max-width: 1400px; padding: 0 var(--pad); }
+
+/* The catalog follows a six-track tessellation: broad/narrow, then its reflection.
+   Counting visible items means filters retain the rhythm without empty cells. */
+.product-grid { grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 72px var(--field-gutter); align-items: start; }
+.product-grid > .product-card {
+  grid-column: span 6; min-width: 0; border: 0; border-radius: 0;
+  background: none; overflow: visible;
+}
+.product-grid > .product-card:nth-child(4n + 1 of :not([hidden])),
+.product-grid > .product-card:nth-child(4n of :not([hidden])) { grid-column: span 7; }
+.product-grid > .product-card:nth-child(4n + 2 of :not([hidden])),
+.product-grid > .product-card:nth-child(4n + 3 of :not([hidden])) { grid-column: span 5; }
+.product-grid > .product-card:nth-child(even of :not([hidden])) { margin-top: var(--field-step); }
+.product-grid > .product-card:nth-child(1 of :not([hidden])):nth-last-child(1 of :not([hidden])) { grid-column: 3 / 11; }
+.card-image { background: none; }
+.card-image .image-mat { background: #1b2920; }
+.product-card[data-category=Writing] .image-mat { background: #302329; }
+.product-card[data-category=Reserve] .image-mat { background: #30251d; }
+.product-card[data-category=Tools] .image-mat { background: #1c2b2b; }
+.product-card .card-copy { padding: 28px 0 0; }
+.card-copy .card-description { margin-bottom: 20px; }
+.card-copy .card-actions { padding-top: 14px; border-top: 1px solid var(--field-line); }
+.store-product { grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: var(--field-gutter); align-items: start; }
+.store-product .product-stage { padding-top: 24px; }
+.store-product-copy { padding-top: var(--field-step); }
+
+@media (min-width: 1600px) {
+  .collection-garden, .practice-section, .bodywork-opening { padding-inline: max(var(--pad), calc((100vw - 1400px) / 2)); }
+}
+@media (max-width: 960px) {
+  .book-opening, .product-opening, .store-product, .bodywork-opening { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+  .collection-garden { column-gap: 32px; }
+  .product-grid > .product-card { grid-column: span 6 !important; }
+  .product-grid > .product-card:nth-child(even of :not([hidden])) { margin-top: 64px; }
+}
+@media (max-width: 760px) {
+  :root { --field-step: 36px; --field-gutter: 36px; }
+  .image-mat { padding: 14px; }
+  .image-mat::before, .image-mat::after { width: 48px; }
+  .hero-copy { margin-bottom: 56px; }
+  .hero-photo, .holder-photo, .holder-film > figure { width: 100%; }
+  .hero-photo .image-mat { padding: 16px; }
+  .hero-photo .image-mat::before, .hero-photo .image-mat::after { width: 56px; }
+  .hero-photo::before { width: 160px; top: -52px; }
+  .home-hero { padding-bottom: 32px; }
+  .collection-garden { display: block; padding: 72px var(--pad); }
+  .collection-garden::before { top: 10px; left: calc(50% - 30px); width: 60px; height: 60px; }
+  .collection-garden .balm-section { margin-top: 64px; }
+  .collection-garden .section-copy { margin-top: 28px; }
+  .book-opening, .product-opening, .book-material, .label-grid,
+  .sensory, .pump-labeling, .practice-section, .bodywork-opening,
+  .store-product { grid-template-columns: minmax(0, 1fr); }
+  .book-opening .book-visual, .product-opening .cap-art,
+  .label-grid > figure:nth-child(2), .bodywork-opening > .image-mat { margin: 0; }
+  .book-opening, .product-opening { padding-top: 32px; padding-bottom: 56px; }
+  .book-material .section-copy, .sensory > ol,
+  .pump-labeling > .section-copy, .store-product-copy { padding-top: 0; }
+  .holder-section .section-heading, .holder-opening .section-heading { margin-bottom: 36px; }
+  .holder-photo figcaption { margin-left: 0; margin-right: 0; }
+  .practice-section, .bodywork-opening { padding: 64px var(--pad); }
+  .practice-section > div, .bodywork-opening > div { padding: 0; }
+  .bodywork-opening { display: grid; }
+  .practice-detail { width: 100%; padding: 0 var(--pad); }
+  .product-grid { display: block; }
+  .product-grid > .product-card { margin: 0 0 64px !important; }
+  .product-grid > .product-card:last-child { margin-bottom: 0 !important; }
+  .store-product .product-stage { padding-top: 0; }
+  .store-product { display: flex; gap: 36px; }
+  .product-stage { width: 100%; }
+}
+@media print {
+  .image-mat { border: 0; padding: 0; background: none; }
+  .image-mat::before, .image-mat::after, .hero-photo::before, .collection-garden::before { display: none; }
+  .collection-garden { display: block; padding: 0; }
+}

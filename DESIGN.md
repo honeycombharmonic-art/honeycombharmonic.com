@@ -69,3 +69,13 @@ Reference review: [Bee de Chaumet](https://www.chaumet.com/en-us/pages/bee-de-ch
 Use the shared `--type-*` scale in `site.css` for the main site, store, and journal. At the default browser text setting, page titles range from 40–64px, the home display title from 44–72px, section headings from 32–48px, body copy from 17–18px, and introductions from 20–24px. Labels, navigation, and captions are 14px; primary actions are 16px. Long-form reading uses the existing serif face at 19–22px with 1.7 line spacing. The values use rem-based fluid sizes so text remains responsive to browser settings.
 
 Keep the enlarged identity, medium-weight DM Sans headings, and readable supporting text. The menu collapses at 960px to make room for the larger navigation labels. The balm's main heading is “Harmonic Touch” without a period. Manuscript passages and article wording remain unchanged.
+
+## October 22 image geometry
+
+Anson requested a researched sacred-geometric arrangement for all images, and added a love of Persian carpets and arabesques without limiting the exploration to them. The composition combines the Persian field / border / medallion relationship with circle-derived sixfold geometry. This is a contemporary design interpretation, not a claim that every Persian carpet follows a single sacred formula.
+
+The six paired layout tracks carry broad and narrow photographs in a reflected rhythm. The book and balm form an offset pair on the home page. Large central images occupy sqrt(3)/2 of their available field, with a one-twelfth-viewport stagger for companion images. These proportions relax to one full-width column on phones. Photography remains rectangular and complete; no product or person is cut into a geometric mask.
+
+`geometry.css` holds the shared layout and framing. Original flat-line SVGs supply a six-petal compass rosette and light arabesque corners. The rosette uses six equal-radius circles around a seventh, with centers spaced 60 degrees apart. Ornament stays in the surrounding mat and never changes the actual product artwork. No glow, relief, metallic effects, or animated decoration. The original bee and honeycomb signatures remain.
+
+Research: the [V&A's Ardabil Carpet](https://www.vam.ac.uk/articles/the-ardabil-carpet) describes the integrated central field, medallion, quarter-corners, parallel borders, and flowing scrollwork. The [Met's Islamic Art and Geometric Design](https://resources.metmuseum.org/resources/metpublications/pdf/Islamic_Art_and_Geometric_Design_Activities_for_Learning.pdf), printed pages 20–25, supplies the equal-circle rosette, hexagon, and triangular-grid construction. The SVG ornament is original; museum artwork is not embedded in the site.
