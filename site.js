@@ -22,7 +22,7 @@
         button.focus();
       }
     });
-    matchMedia('(min-width: 761px)').addEventListener('change', close);
+    matchMedia('(min-width: 961px)').addEventListener('change', close);
   }
   const copy = document.querySelector('.copy-email');
   if (copy && navigator.clipboard) {

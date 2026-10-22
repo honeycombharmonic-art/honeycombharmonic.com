@@ -63,3 +63,9 @@ Product imagery now uses flat gold-color and ivory printing throughout. Artwork 
 A small original engraved-style bee punctuates selected opening text and the shared footer. Fine open honeycomb cells sit in spare margins on the home introduction, volume overview, store introduction and related-page transitions. One shared wall per cell, quiet gold ink, no tiled pattern or effects; reduce or omit marginal geometry on narrow screens. These are page illustrations, not changes to product artwork.
 
 Reference review: [Bee de Chaumet](https://www.chaumet.com/en-us/pages/bee-de-chaumet) informed the clean linked geometry and space around objects; [Guerlain Abeille Royale](https://www.guerlain.com/fr/fr-fr/c/abeille-royale-eu.html) informed the small bee signature. Our bee illustration is original, and the honeycomb is native vector geometry. No borrowed logos or metallic surface treatments.
+
+## October 22 typography
+
+Use the shared `--type-*` scale in `site.css` for the main site, store, and journal. At the default browser text setting, page titles range from 40–64px, the home display title from 44–72px, section headings from 32–48px, body copy from 17–18px, and introductions from 20–24px. Labels, navigation, and captions are 14px; primary actions are 16px. Long-form reading uses the existing serif face at 19–22px with 1.7 line spacing. The values use rem-based fluid sizes so text remains responsive to browser settings.
+
+Keep the enlarged identity, medium-weight DM Sans headings, and readable supporting text. The menu collapses at 960px to make room for the larger navigation labels. The balm's main heading is “Harmonic Touch” without a period. Manuscript passages and article wording remain unchanged.
