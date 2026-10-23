@@ -15,7 +15,7 @@
   position: relative;
   min-width: 0;
   width: 100%;
-  padding: clamp(14px, 1.8vw, 28px);
+  padding: clamp(10px, 1vw, 16px);
   border: 1px solid var(--field-line);
   background: #121c17;
 }
@@ -40,18 +40,11 @@ main .image-mat > img {
   text-align: left; padding: 0; margin: 18px 0 0;
 }
 
-/* The opening photograph is the medallion; the border is a quiet, open field. */
+/* The product grouping supplies the opening geometry; the frame stays quiet. */
 .home-hero { padding-bottom: 48px; }
 .hero-copy { margin-bottom: 96px; }
 .hero-photo { width: var(--field-width); max-width: 1240px; isolation: isolate; }
-.hero-photo::before {
-  content: ""; position: absolute; z-index: -1; pointer-events: none;
-  width: 260px; aspect-ratio: 1; left: 50%; top: -76px;
-  transform: translateX(-50%);
-  background: url('/assets/sixfold-medallion.svg') center / contain no-repeat;
-  opacity: .5;
-}
-.hero-photo .image-mat { padding: clamp(24px, 3.333vw, 48px); background: #17251c; }
+.hero-photo .image-mat { padding: clamp(12px, 1.8vw, 24px); background: #17251c; }
 .hero-photo .image-mat::before, .hero-photo .image-mat::after { width: clamp(72px, 10vw, 140px); }
 
 /* Paired chapters read as one staggered garden, not independent banners. */

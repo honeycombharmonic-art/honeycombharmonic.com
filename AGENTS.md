@@ -2,7 +2,7 @@
 
 - Publish through this GitHub repository's `main` branch and its connected Netlify project. Verify the published commit and custom domain.
 - Permanent user direction, October 20, 2026: “the tongue depresser is out. of everything. forever”. Do not include tongue depressors or wooden applicator sticks in product designs, demonstrations, imagery, animations, copy, or future assets.
-- Use the holder images named `holder-practice-v1-*.webp`, derived from the approved `holder-studio-v2` geometry with the mount visible and no floating lid. Preserve the full composition on mobile. Do not restore retired holder images from Git history.
+- Use the holder images named `holder-product-study-v1-*.webp`, derived from the approved `holder-studio-v2` geometry with the mount visible and no floating lid. Preserve the full composition on mobile. Do not restore retired holder images from Git history.
 - Apple is the primary website design reference. Keep the dark palette, restrained warm-gold accents, clear sans-serif hierarchy, generous space, compact navigation, and large product photography. See DESIGN.md.
 - Image quality is a release requirement: elegant, photorealistic product studies and authentic session photography. Preserve actual people, the original identity and approved product direction. Never substitute generated faces for people in the real photos.
 - Preserve the canonical book passages, approved cap artwork, and unrelated website design when making focused changes.
@@ -27,3 +27,5 @@
 
 - October 21, flat-print correction: all gold and ivory product and book decoration is flat printed ink. No raised metal, gold wire, beads, inlay, embossing, gilded edges or sculpted botanical relief. Preserve all three nested hexagon outlines and approved artwork placement. Keep the black jar underside and approved ingredient/QR layouts. Current HTML image references are authoritative.
 - Page ornament: use the original fine golden bee and single-stroke honeycomb sparingly in the layout, clear of text and product photos. Small isolated accents, no repeating wallpaper, shadows, glow, animation or jewelry-like relief.
+
+- October 22 product photography: current `*-product-study-v1-*` images make products dominant through close framing, orientation, scale, and spacing. Backgrounds remain subordinate thematic surfaces. Do not restore the discarded room-led bohème candidates. Preserve the exact approved black jar underside and centered side proofs, authentic bodywork photographs, and holder film. The two pump backs now have quieter backgrounds; all three QR destinations were checked at both responsive sizes.
